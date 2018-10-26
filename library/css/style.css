@@ -993,7 +993,7 @@ figure video {
     margin: 0 auto;
     font-family: "berthold_walbaum_bookregular";
     max-width: 70%;
-    text-align: left; }
+    text-align: center; }
     .vc_row.grey-panel h1:before {
       content: '';
       position: absolute;
