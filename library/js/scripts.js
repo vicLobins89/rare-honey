@@ -117,9 +117,9 @@ jQuery(document).ready(function($) {
 	}
 	
 	function resizeArticle() {
-		var elementWidth = $('.work-post, .news-post').width();
+		var elementWidth = $('.news-post').width();
 		var elementHeight = Math.round((elementWidth/16)*9);
-		$('.work-post, .news-post').height(elementHeight);
+		$('.news-post').height(elementHeight);
 	}
 	
 	// Admin bar adjust
@@ -275,7 +275,7 @@ jQuery(document).ready(function($) {
 		positionCatLine();
 	});
 	positionCatLine();
-//	resizeArticle();
+	resizeArticle();
 	
 	var $workThumb = $('article.work-post'),
 		thumbLength = 9;
@@ -354,7 +354,7 @@ jQuery(document).ready(function($) {
 		
 		// work cat
 		positionCatLine();
-//		resizeArticle();
+		resizeArticle();
 		
 		// skew
 		resizeSkew();
