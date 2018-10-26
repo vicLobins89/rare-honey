@@ -983,7 +983,7 @@ figure video {
     z-index: 1; }
 
 .vc_row.grey-panel {
-  background: #e0e0e0; }
+  background: #e2e2e2; }
   .blog .vc_row.grey-panel, .archive .vc_row.grey-panel {
     padding: 3em 0 3.25em; }
   .vc_row.grey-panel h1 {
@@ -1125,7 +1125,7 @@ figure video {
   .news-post .project-details .project-inner h3 {
     font-family: 'berthold_walbaum_bookregular';
     font-weight: normal;
-    font-size: 1.75em; }
+    font-size: 1.55em; }
 
 .cat-nav {
   position: relative;

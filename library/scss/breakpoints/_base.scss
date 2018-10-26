@@ -103,7 +103,7 @@ figure {
 
 .vc_row {
 	&.grey-panel {
-		background: darken($light-gray, 2%);
+		background: darken($light-gray, 1%);
 		
 		.blog &, .archive & {
 			padding: 3em 0 3.25em;
@@ -340,7 +340,7 @@ figure {
 			h3 {
 				font-family: 'berthold_walbaum_bookregular';
 				font-weight: normal;
-				font-size: 1.75em;
+				font-size: 1.55em;
 			}
 		}
 	}

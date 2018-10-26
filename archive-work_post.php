@@ -79,7 +79,9 @@
 
 							<section class="entry-content cf">
 
-								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail( 'post-thumb' ); ?></a>
+								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
+									<?php the_post_thumbnail( 'post-thumb' ); ?>
+								</a>
 								
 								<div class="project-details">
 									<a href="<?php the_permalink() ?>" class="clickthrough" title="<?php the_title(); ?>"></a>
