@@ -10,8 +10,11 @@
 								<h1 class="archive-title">News & Views<?php // echo ucfirst($pagename); ?></h1>
 							</div>
 							
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-							<?php //$do_not_duplicate[] = $post->ID; ?>
+							<?php 
+							if (have_posts()) : 
+							echo '<div class="flex flex-wrap">';
+							while (have_posts()) : the_post(); 
+							?>
 
 							<article data-id="<?php echo $post->ID; ?>" id="post-<?php the_ID(); ?>" <?php post_class( 'cf vc_col-sm-4 news-post' ); ?> role="article">
 
@@ -32,7 +35,7 @@
 
 							</article>
 
-							<?php endwhile; ?>
+							<?php endwhile; echo '</div>'; ?>
 
 									<?php bones_page_navi(); ?>
 
