@@ -983,19 +983,17 @@ figure video {
     z-index: 1; }
 
 .vc_row.grey-panel {
-  background: #e2e2e2; }
+  background: #3c3c3b; }
   .blog .vc_row.grey-panel, .archive .vc_row.grey-panel {
     padding: 3em 0 3.25em; }
   .vc_row.grey-panel h1 {
     position: relative;
     font-size: 2.2em;
-    color: #3c3c3b;
+    color: #fff;
     margin: 0 auto;
-    font-family: "berthold_walbaum_bookregular";
     max-width: 70%;
     text-align: center; }
     .vc_row.grey-panel h1:before {
-      content: '';
       position: absolute;
       height: 2px;
       width: 30%;
@@ -1004,7 +1002,7 @@ figure video {
       margin-left: -15%;
       background: #f7c400; }
   .vc_row.grey-panel h2 {
-    color: #3c3c3b;
+    color: #fff;
     font-weight: bold;
     margin: 0;
     font-size: 2em; }

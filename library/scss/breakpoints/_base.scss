@@ -103,7 +103,8 @@ figure {
 
 .vc_row {
 	&.grey-panel {
-		background: darken($light-gray, 1%);
+//		background: darken($light-gray, 1%);
+		background: $charcoal;
 		
 		.blog &, .archive & {
 			padding: 3em 0 3.25em;
@@ -112,14 +113,15 @@ figure {
 		h1 {
 			position: relative;
 			font-size: 2.2em;
-			color: $charcoal;
+			color: $white;
+//			color: $charcoal;
 			margin: 0 auto;
-			font-family: $berthold;
+//			font-family: $berthold;
 			max-width: 70%;
 			text-align: center;
 			
 			&:before {
-				content: '';
+//				content: '';
 				position: absolute;
 				height: 2px;
 				width: 30%;
@@ -131,7 +133,8 @@ figure {
 		}
 		
 		h2 {
-			color: $charcoal;
+			color: $white;
+//			color: $charcoal;
 			font-weight: bold;
 			margin: 0;
 			font-size: 2em;
