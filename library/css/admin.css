@@ -1,0 +1,64 @@
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Admin Stylesheet
+
+******************************************************************/
+.toplevel_page_honey-theme-settings input[type=text], .toplevel_page_honey-theme-settings input[type=search], .toplevel_page_honey-theme-settings input[type=radio], .toplevel_page_honey-theme-settings input[type=tel], .toplevel_page_honey-theme-settings input[type=time], .toplevel_page_honey-theme-settings input[type=url], .toplevel_page_honey-theme-settings input[type=week], .toplevel_page_honey-theme-settings input[type=password], .toplevel_page_honey-theme-settings input[type=checkbox], .toplevel_page_honey-theme-settings input[type=color], .toplevel_page_honey-theme-settings input[type=date], .toplevel_page_honey-theme-settings input[type=datetime], .toplevel_page_honey-theme-settings input[type=datetime-local], .toplevel_page_honey-theme-settings input[type=email], .toplevel_page_honey-theme-settings input[type=month], .toplevel_page_honey-theme-settings input[type=number], .toplevel_page_honey-theme-settings select, .toplevel_page_honey-theme-settings textarea {
+  min-width: 50%;
+  min-height: 35px; }
+.toplevel_page_honey-theme-settings .wp-core-ui .button, .toplevel_page_honey-theme-settings .wp-core-ui .button-secondary {
+  min-height: 35px; }
+
+.current-image {
+  max-width: 200px; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+
+.switch input {
+  display: none; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #2196F3; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }

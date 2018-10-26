@@ -1,0 +1,40 @@
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Super Large Monitor Stylesheet
+
+******************************************************************/
+
+#team {
+	
+	.vc_row {
+		
+		.profile {
+			
+			p {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+.boxed-layout {
+	background: #f2f2f2;
+	
+	.header {
+		width: 90%;
+		max-width: 1500px;
+		margin: auto;
+	}
+	
+	#container {
+		width: 90%;
+		max-width: 1500px;
+		margin: auto;
+	}
+}
+
+.vc_row .wpb_text_column.fw_light {
+	font-size: 140%;
+}

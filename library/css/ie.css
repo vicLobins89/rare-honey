@@ -1,0 +1,455 @@
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: IE Stylesheet
+
+Import all the styles the standard stylesheet gets, only
+without the media queries.
+
+******************************************************************/
+/******************************************************************
+IMPORTS & DEPENDENCIES
+All the BASE styles are called already since IE can
+read those. Below we import the stuff IE can't
+understand (what's inside the media queries). We also need to
+import the mixins file so SASS can understand the variables.
+******************************************************************/
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Variables
+
+******************************************************************/
+/*********************
+COLORS
+Choosing your colors http://0to255.com/
+*********************/
+.yellow {
+  color: #f7c400 !important; }
+
+.white {
+  color: #fff !important; }
+
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Typography
+
+******************************************************************/
+/*********************
+FONT FACE
+*********************/
+@font-face {
+  font-family: 'berthold_walbaum_bookregular';
+  src: url("../fonts/berthold_walbaum_book_regular-webfont.eot");
+  src: url("../fonts/berthold_walbaum_book_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/berthold_walbaum_book_regular-webfont.woff2") format("woff2"), url("../fonts/berthold_walbaum_book_regular-webfont.woff") format("woff"), url("../fonts/berthold_walbaum_book_regular-webfont.ttf") format("truetype"), url("../fonts/berthold_walbaum_book_regular-webfont.svg#berthold_walbaum_bookregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+Typographical defaults: http://www.newnet-soft.com/blog/csstypography
+*/
+p {
+  -ms-word-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Mixins Stylesheet
+
+Helpful:
+http://sachagreif.com/useful-sass-mixins/
+http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
+
+******************************************************************/
+/*********************
+TRANSITION
+*********************/
+/* @include transition(all 0.2s ease-in-out); */
+/*********************
+CSS3 GRADIENTS
+*********************/
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+BOX SIZING
+*********************/
+/* @include box-sizing(border-box); */
+/*********************
+VENDOR
+*********************/
+/*
+.selector {
+  @include prefix(transform, rotate(45deg), webkit ms);
+}
+*/
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: IE Grid Styles
+
+******************************************************************/
+#team .vc_row .profile p {
+  font-size: 1em; }
+
+/*********************
+HEADER STYLES
+*********************/
+.social {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 23px; }
+  .social a {
+    display: inline-block;
+    margin-left: 20px; }
+    .social a i {
+      font-size: 1.4em; }
+
+/*********************
+NAVIGATION STYLES
+*********************/
+nav.main-menu {
+  left: -350px;
+  width: 350px; }
+
+.nav {
+  width: 350px; }
+
+/* .menu is clearfixed inside mixins.scss */
+.menu {
+  /* end .menu ul */ }
+  .menu ul {
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */ }
+
+/* end .menu */
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* entry content */
+.entry-content .alignleft, .entry-content img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left; }
+.entry-content .alignright, .entry-content img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right; }
+.entry-content .aligncenter, .entry-content img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both; }
+
+/* end .entry-content */
+/*********************
+FOOTER STYLES
+*********************/
+/* end .footer-links */
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+body {
+  font-size: 100%; }
+
+.bg-fixed.vc_custom_1500288003875 {
+  background-position: center top 50px !important; }
+.bg-fixed.vc_custom_1500288033939 {
+  background-position: center !important; }
+.bg-fixed.vc_custom_1500288074930 {
+  background-position: center bottom !important; }
+
+.force-bottom {
+  position: absolute;
+  bottom: 0; }
+
+.cat-nav {
+  width: 100%;
+  padding: 0 10px; }
+  .cat-nav .work-cat-button {
+    display: inline-block;
+    margin-right: 25px;
+    width: 110px;
+    text-align: center;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 12px;
+    line-height: 1.2; }
+    .cat-nav .work-cat-button:last-child {
+      margin-right: 0; }
+  @media screen and (max-width: 940px) {
+    .cat-nav .work-cat-button {
+      width: 11.4%; } }
+  .cat-nav .cat-position {
+    display: block;
+    position: absolute;
+    width: 110px;
+    height: 3px;
+    background: #f7c400;
+    left: -110px;
+    bottom: 0;
+    -webkit-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out; }
+
+.skew-2col .wpb_column {
+  width: 100%;
+  overflow: hidden; }
+  .skew-2col .wpb_column .skew {
+    display: none; }
+  .skew-2col .wpb_column > .vc_column-inner {
+    padding-right: 7% !important; }
+
+.video-wrapper h1 {
+  margin-top: 18%;
+  font-size: 3em; }
+
+#team .vc_row,
+.image_hover_100 .vc_row {
+  width: 50%;
+  float: left; }
+  #team .vc_row .profile p,
+  .image_hover_100 .vc_row .profile p {
+    font-size: 0.8em; }
+
+.image_hover_100 .vc_row {
+  width: 100%; }
+
+.landing-text h2 {
+  font-size: 2.2em; }
+.landing-text h3 {
+  font-size: 1.75em; }
+
+.vc_row .vert-align.wpb_text_column {
+  padding: 1em 2.3em; }
+
+.vc_row.testimonials {
+  padding-left: 12%;
+  padding-right: 12%; }
+
+.error404 #post-not-found .image404 {
+  max-width: 260px; }
+
+.client-logo {
+  width: 25%; }
+  .client-logo img {
+    padding: 40px; }
+
+.work-vid .vid-text {
+  top: 0.75em;
+  left: 1em;
+  font-size: 3rem; }
+  .work-vid .vid-text span {
+    font-size: 20px; }
+
+.work_side__col {
+  font-size: 75%;
+  margin-bottom: 0 !important; }
+  .work_side__col h6 {
+    font-size: 1.25em; }
+  .work_side__col h2 {
+    margin: 1.14em 0 0.5em;
+    padding-bottom: 0.5em; }
+    .work_side__col h2:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 30%;
+      bottom: 0;
+      left: 0;
+      background: #f7c400; }
+  .work_side__col p {
+    margin-bottom: 1.75em; }
+
+.vc_row-flex.reverse .wpb_column:first-child {
+  order: unset; }
+
+.vc_row .wpb_text_column.fw_light {
+  padding: 4em;
+  font-size: 100%; }
+  .vc_row .wpb_text_column.fw_light .h3 {
+    margin-bottom: .83em; }
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+.wrap {
+  width: 760px; }
+
+/*********************
+HEADER STYLES
+*********************/
+.macmillan {
+  position: absolute;
+  display: block;
+  width: 280px;
+  left: 50px;
+  top: 7px; }
+  .macmillan img {
+    max-width: 100%; }
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.nav {
+  /* end .menu ul li */
+  /* highlight current page */
+  /* end current highlighters */ }
+  .nav li {
+    position: relative;
+    /* showing sub-menus */ }
+    .nav li:hover ul.sub-menu,
+    .nav li:hover ul.children {
+      max-height: 400px; }
+    .nav li.menu-item-has-children .plus:before {
+      bottom: 2px; }
+    .nav li.menu-item-has-children:hover .plus:before {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+    .nav li a {
+      font-size: 1em; }
+      .nav li a:hover, .nav li a:focus {
+        color: #333; }
+    .nav li ul.sub-menu,
+    .nav li ul.children {
+      -webkit-transition: max-height 0.6s ease-in-out;
+      transition: max-height 0.6s ease-in-out;
+      /* highlight sub-menu current page */ }
+      .nav li ul.sub-menu li,
+      .nav li ul.children li {
+        /*
+        third level
+        */ }
+        .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
+        .nav li ul.children li a:hover,
+        .nav li ul.children li a:focus {
+          color: #333; }
+        .nav li ul.sub-menu li ul,
+        .nav li ul.children li ul {
+          top: 0;
+          left: 100%; }
+
+/* end .nav */
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar {
+  margin-top: 2.2em; }
+
+.widgettitle {
+  border-bottom: 2px solid #444;
+  margin-bottom: 0.75em; }
+
+.widget {
+  padding: 0 10px;
+  margin: 2.2em 0; }
+  .widget ul li {
+    margin-bottom: 0.75em;
+    /* deep nesting */ }
+    .widget ul li ul {
+      margin-top: 0.75em;
+      padding-left: 1em; }
+
+/* links widget */
+/* meta widget */
+/* pages widget */
+/* recent-posts widget */
+/* archives widget */
+/* tag-cloud widget */
+/* calendar widget */
+/* category widget */
+/* recent-comments widget */
+/* search widget */
+/* text widget */
+/*********************
+FOOTER STYLES
+*********************/
+.copyright a {
+  display: inline-block; }
+
+.corner-bg {
+  background-size: contain; }
+
+/* end .footer-links */
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Desktop Stylsheet
+
+******************************************************************/
+.wrap {
+  width: 1040px; }
+
+h1, .h1 {
+  font-size: 3.2em;
+  line-height: 1.25em; }
+  h1.single-title, .h1.single-title {
+    font-weight: bold;
+    font-size: 3em; }
+
+h2, .h2 {
+  font-size: 2em; }
+
+#team .vc_row {
+  width: 33.33333%; }
+  #team .vc_row .profile p {
+    font-size: 0.7em; }
+
+.skew-2col .wpb_column {
+  width: 50%; }
+  .skew-2col .wpb_column:first-child {
+    width: 53%; }
+  .skew-2col .wpb_column:last-child {
+    width: 47%; }
+  .skew-2col .wpb_column .skew {
+    display: block;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid white;
+    width: 0;
+    height: 0;
+    right: 0;
+    position: absolute;
+    z-index: 999; }
+
+.work_side__col {
+  font-size: 100%; }
+
+/******************************************************************
+ADDITIONAL IE FIXES
+For more info on using Modernizr classes:
+http://www.modernizr.com/docs/
+******************************************************************/
+/*
+For example:
+
+.no-textshadow .class { ... }
+
+Can also target specific versions by using the classes applied to
+the html element. Check header.php file to see what they are:
+
+.lt-ie8 .class { ... }
+
+*/

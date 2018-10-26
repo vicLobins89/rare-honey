@@ -1,0 +1,187 @@
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Overridess
+
+Plugin and other CSS overrides
+
+******************************************************************/
+
+// Visual Composer
+
+.vc_row {
+    margin-left: 0;
+    margin-right: 0;
+	
+	.vc_column_container {
+		> .vc_column-inner {
+			padding-left: 0;
+			padding-right: 0;
+			padding-top: 0 !important;
+		}
+	}
+	
+	.wpb_content_element {
+		margin-bottom: 0;
+	}
+	
+	.wpb_text_column {
+		padding: 2.3em;
+	}
+	
+	.wpb_single_image {
+		.wpb_wrapper, .vc_single_image-wrapper, .vc_single_image-img {
+			width: 100%;
+		}
+		.vc_single_image-img {
+			max-width: 100%;
+		}
+	}
+	
+	
+	// Meta Slider
+	.metaslider {
+
+		.flexslider {
+			margin-bottom: 0;
+			
+			.flex-direction-nav {
+				li {
+					a {
+						width: 35px;
+						height: 65px;
+						margin: -32px 0 0;
+						background-image: url(../images/slider-arrows.png);
+						background-size: 70px;
+						background-position-y: -65px;
+						
+						&.flex-next {
+							right: 15px;
+						}
+						
+						&.flex-prev {
+							left: 15px;
+						}
+					}
+				}
+			}
+
+			.flex-control-nav {
+				bottom: 30px;
+				
+				@media screen and (max-width: 480px) {
+					bottom: 10px;
+				}
+			}
+
+			.flex-control-paging {
+				li {
+					a {
+						width: 18px;
+						height: 18px;
+						background: none;
+						border: 2px solid $white;
+						@include transition(background 0.2s ease-in-out);
+
+						&.flex-active, &:hover {
+							background: $white;
+						}
+					}
+				}
+			}
+			
+			.caption-wrap {
+				padding: 4.5% 4.2%;
+    			width: 100%;
+				height: 100%;
+				bottom: auto;
+				top: 0;
+				left: 0;
+				background: none;
+				opacity: 1;
+				z-index: 50;
+				
+				@media screen and (max-width: 480px) {
+					
+				}
+				
+				.caption {
+					font-family: 'berthold_walbaum_bookregular';
+					font-size: 7em;
+					font-size: 7.6vw;
+					line-height: 0.9;
+					padding: 0;
+					
+					span {
+						display: block;
+						font-size: 1.65rem;
+						font-size: 1.75vw;
+						font-family: "proxima-nova",sans-serif;
+						margin: 1.5em 0 0 0.2em;
+					}
+					
+					@media screen and (max-width: 480px) {
+						span {
+							font-size: 10px;
+						}
+					}
+				}
+			}
+		}
+		
+		&.metaslider-7182 {
+			&:after {
+				content: '';
+				position: absolute;
+				z-index: 30;
+				background: url(/wp-content/uploads/2017/02/yellow-angle.png) no-repeat right bottom;
+				background-size: contain;
+				width: 30%;
+				height: 30%;
+				bottom: 0;
+				right: 0;
+			}
+			
+			.caption-wrap {
+				&:before {
+					content: '';
+					position: absolute;
+					z-index: -1;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background: url(../images/shadow-grad.png) repeat-x 0 0;
+				}
+			}
+		}
+	}
+}
+
+
+
+// New Layouts Tests
+[data-layout="new-layout"].single-work_post {
+	background: #999999;
+	
+	.wpb_text_column {
+		h1 {
+			color: $yellow;
+			font-family: $berthold;
+			font-size: 2em;
+			margin-bottom: 1em;
+		}
+
+		p {
+			font-size: 1.5em;
+			line-height: 1.25;
+			font-weight: 100;
+			margin-bottom: 1em;
+
+			strong, b {
+				font-weight: 600;
+			}
+		}
+	}
+}

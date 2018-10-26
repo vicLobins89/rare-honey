@@ -1,0 +1,498 @@
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-size: 100%;
+}
+
+.bg-fixed {
+	
+	&.vc_custom_1500288003875 {
+		background-position: center top 50px !important;
+	}
+	
+	&.vc_custom_1500288033939 {
+		background-position: center !important;
+	}
+	
+	&.vc_custom_1500288074930 {
+		background-position: center bottom !important;
+	}
+}
+
+.force-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.cat-nav {
+	width: 100%;
+	padding: 0 10px;
+	
+	.work-cat-button {
+		display: inline-block;
+		margin-right: 25px;
+		width: 110px;
+		text-align: center;
+		border-bottom: none;
+    	padding: 0;
+		margin-bottom: 12px;
+		line-height: 1.2;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	@media screen and (max-width: 940px) {
+		.work-cat-button {
+			width: 11.4%;
+		}
+	}
+	
+	.cat-position {
+		display: block;
+		position: absolute;
+		width: 110px;
+		height: 3px;
+		background: $yellow;
+		left: -110px;
+		bottom: 0;
+		@include transition(left 0.4s ease-in-out);
+	}
+}
+
+.skew-2col {
+	.wpb_column {
+		width: 100%;
+		overflow: hidden;
+		
+		.skew {
+			display: none;
+		}
+		
+		> .vc_column-inner {
+			padding-right: 7% !important;
+		}
+	}
+}
+
+.video-wrapper {
+	h1 {
+		margin-top: 18%;
+		font-size: 3em;
+	}
+}
+
+#team,
+.image_hover_100 {
+	
+	.vc_row {
+		width: 50%;
+		float: left;
+		
+		.profile {
+			
+			p {
+				font-size: 0.8em;
+			}
+		}
+	}
+}
+
+.image_hover_100 {
+	.vc_row {
+		width: 100%;
+	}
+}
+
+.landing-text {
+	h2 {
+		font-size: 2.2em;
+	}
+	
+	h3 {
+		font-size: 1.75em;
+	}
+}
+
+.vert-align {
+	.vc_row &.wpb_text_column {
+		padding: 1em 2.3em;
+	}
+}
+
+.vc_row {
+	&.testimonials {
+		padding-left: 12%;
+		padding-right: 12%;
+	}
+}
+
+.error404 {
+	#post-not-found {
+		.image404 {
+			max-width: 260px;
+		}
+	}
+}
+
+.client-logo {
+	width: 25%;
+	
+	img {
+		padding: 40px;
+	}
+}
+
+.work-vid {
+//	video {
+//		.home & {
+//			top: -43px;
+//		}
+//	}
+	
+	.vid-text {
+		top: 0.75em;
+		left: 1em;
+		font-size: 3rem;
+
+		span {
+			font-size: 20px;
+		}
+	}
+}
+
+.work_side__col {
+	font-size: 75%;
+	margin-bottom: 0 !important;
+	
+	h6 {
+		font-size: 1.25em;
+	}
+	
+	h2 {
+		margin: 1.14em 0 0.5em;
+		padding-bottom: 0.5em;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 30%;
+			bottom: 0;
+			left: 0;
+			background: $yellow;
+		}
+	}
+	
+	p {
+		margin-bottom: 1.75em;
+	}
+}
+
+.vc_row-flex.reverse {
+	.wpb_column:first-child {
+		order: unset;
+	}
+}
+
+.vc_row .wpb_text_column.fw_light {
+	padding: 4em;
+	font-size: 100%;
+	
+	.h3 {
+		margin-bottom: .83em;
+	}
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 760px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {}
+
+	#logo {}
+
+.macmillan {
+	position: absolute;
+	display: block;
+	width: 280px;
+    left: 50px;
+    top: 7px;
+	
+	img {
+		max-width: 100%;
+	}
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+	ul {
+	}
+	
+	li {
+		position: relative;
+		
+		&:hover {
+			ul.sub-menu,
+			ul.children {
+				max-height: 400px;
+			}
+		}
+		
+		
+		&.menu-item-has-children {
+			.plus {
+				&:before {
+					bottom: 2px;
+				}
+			}
+		}
+		
+		&.menu-item-has-children:hover {
+			.plus {
+				&:before {
+					-webkit-transform: rotate(180deg);
+					-moz-transform: rotate(180deg);
+					-ms-transform: rotate(180deg);
+					transform: rotate(180deg);
+				}
+			}
+		}
+		
+		a {
+			font-size: 1em;
+			
+			&:hover, &:focus {
+				color: $med-gray;
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		ul.sub-menu,
+		ul.children {
+			@include transition(max-height 0.6s ease-in-out);
+
+			li {
+
+				a {
+
+					&:hover,
+					&:focus {
+						color: $med-gray;
+					}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+					}
+				}
+
+				/*
+				third level
+				*/
+				ul {
+					top:0;
+					left:100%;
+				}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current_page_ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover > ul {
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	margin-top: 2.2em;
+}
+
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+	}
+
+	.widget {
+		padding: 0 10px;
+		margin: 2.2em 0;
+
+		ul {
+			li {
+				margin-bottom: 0.75em;
+
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+	/* links widget */
+	.widget_links {}
+	.widget_links ul {}
+	.widget_links ul li {}
+	.widget_links ul li a {}
+
+	/* meta widget */
+	.widget_meta {}
+	.widget_meta ul {}
+	.widget_meta ul li {}
+	.widget_meta ul li a {}
+
+	/* pages widget */
+	.widget_pages {}
+	.widget_pages ul {}
+	.widget_pages ul li {}
+	.widget_pages ul li a {}
+
+	/* recent-posts widget */
+	.widget_recent_entries {}
+	.widget_recent_entries ul {}
+	.widget_recent_entries ul li {}
+	.widget_recent_entries ul li a {}
+
+	/* archives widget */
+	.widget_archive {}
+	.widget_archive ul {}
+	.widget_archive ul li {}
+	.widget_archive ul li a {}
+	.widget_archive select {}
+	.widget_archive option {}
+
+	/* tag-cloud widget */
+	.widget_links {}
+	.widget_links li:after {}
+	.widget_links li:before {}
+	.widget_tag_cloud {}
+	.widget_tag_cloud a {}
+	.widget_tag_cloud a:after {}
+	.widget_tag_cloud a:before {}
+
+	/* calendar widget */
+	.widget_calendar {}
+	#calendar_wrap {}
+	#calendar_wrap th {}
+	#calendar_wrap td {}
+	#wp-calendar tr td {}
+	#wp-calendar caption {}
+	#wp-calendar a {}
+	#wp-calendar #today {}
+	#wp-calendar #prev {}
+	#wp-calendar #next {}
+	#wp-calendar #next a {}
+	#wp-calendar #prev a {}
+
+	/* category widget */
+	.widget_categories {}
+	.widget_categories ul {}
+	.widget_categories ul li {}
+	.widget_categories ul ul.children {}
+	.widget_categories a {}
+	.widget_categories select{}
+	.widget_categories select#cat {}
+	.widget_categories select.postform {}
+	.widget_categories option {}
+	.widget_categories .level-0 {}
+	.widget_categories .level-1 {}
+	.widget_categories .level-2 {}
+	.widget_categories .level-3 {}
+
+	/* recent-comments widget */
+	.recentcomments {}
+	#recentcomments {}
+	#recentcomments li {}
+	#recentcomments li a {}
+	.widget_recent_comments {}
+
+	/* search widget */
+	#searchform {}
+	.widget_search {}
+	.screen-reader-text {}
+
+	/* text widget */
+	.textwidget {}
+	.widget_text {}
+	.textwidget p {}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.copyright a {
+	display: inline-block;
+}
+
+.corner-bg {
+    background-size: contain;
+}
+
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			
+			ul {}
+		}
+	}
+} /* end .footer-links */
+
