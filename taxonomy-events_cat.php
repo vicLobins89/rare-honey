@@ -117,14 +117,15 @@
 
 										<section class="entry-content cf">
 
-											<?php the_post_thumbnail( array(640, 360) ); ?>
+											<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
+												<?php the_post_thumbnail( 'post-thumb' ); ?>
+											</a>
 
 											<div class="project-details">
 												<a href="<?php the_permalink() ?>" class="clickthrough" title="<?php the_title(); ?>"></a>
 												<div class="project-inner">
 													<h3 class="h3">
 														<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-														<?php //echo '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'; ?>
 													</h3>
 													<?php //the_excerpt(); ?>
 													<?php //echo get_the_term_list( $post->ID, 'events_cat', '<div class="cats">', ', ', '</div>' ); ?>

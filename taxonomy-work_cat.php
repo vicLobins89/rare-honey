@@ -38,10 +38,12 @@
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf vc_col-sm-6 work-post' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf vc_col-sm-4 work-post' ); ?> role="article">
 
 								<section class="entry-content cf">
-									<?php the_post_thumbnail( array(960, 540) ); ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
+										<?php the_post_thumbnail( 'post-thumb' ); ?>
+									</a>
 								
 									<div class="project-details">
 										<a href="<?php the_permalink() ?>" class="clickthrough" title="<?php the_title(); ?>"></a>
