@@ -24,7 +24,11 @@
 							<h3 class="archive-title"><?php post_type_archive_title(); ?></h3>
 						</header>
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						<?php 
+						if (have_posts()) : 
+						echo '<div class="flex flex-wrap">';
+						while (have_posts()) : the_post(); 
+						?>
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf show vc_col-sm-6' ); ?> role="article">
 
@@ -48,7 +52,7 @@
 
 						</article>
 
-						<?php endwhile; ?>
+						<?php endwhile; echo '</div>'; ?>
 
 								<?php bones_page_navi(); ?>
 
