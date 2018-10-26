@@ -275,7 +275,7 @@ jQuery(document).ready(function($) {
 		positionCatLine();
 	});
 	positionCatLine();
-	resizeArticle();
+//	resizeArticle();
 	
 	var $workThumb = $('article.work-post'),
 		thumbLength = 9;
@@ -354,7 +354,7 @@ jQuery(document).ready(function($) {
 		
 		// work cat
 		positionCatLine();
-		resizeArticle();
+//		resizeArticle();
 		
 		// skew
 		resizeSkew();
