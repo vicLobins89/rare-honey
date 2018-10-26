@@ -105,13 +105,13 @@
 							);
 							$query2 = new WP_Query( $args2 );
 
-							if ( $query2->have_posts() ) : ?>
+							if ( $query2->have_posts() ) : $postCount = 0; ?>
 							
 							<div class="vc_row grey-panel grey-panel">
 								<h1 class="archive-title">Past Events</h1>
 							</div>
 							
-							<?php while ( $query2->have_posts() ) : $query2->the_post(); ?>
+							<?php while ( $query2->have_posts() ) : $query2->the_post(); $postCount ++; ?>
 								
 									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf vc_col-sm-4 news-post' ); ?> role="article">
 
@@ -139,7 +139,7 @@
 							<?php endwhile; ?>
 								
 								<div class="cf"></div>
-								<?php bones_page_navi(); ?>
+								<?php if ($postcount > 9) { bones_page_navi(); } ?>
 								
 							<?php wp_reset_postdata(); ?>
 							<?php else : ?>
