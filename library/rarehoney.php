@@ -122,10 +122,6 @@ function bones_scripts_and_styles() {
 
 		// ie-only style sheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
-	  
-		// Font awesome
-		wp_register_script( 'fontawesome-js', get_stylesheet_directory_uri() . '/library/js/fontawesome.min.js', array( 'jquery' ), '', true );
-		wp_register_style( 'fontawesome-css', get_stylesheet_directory_uri() . '/library/css/fontawesome.min.css', array(), '' );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
