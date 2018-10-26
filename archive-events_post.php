@@ -34,7 +34,7 @@
 
 							<section class="entry-content cf">
 
-								<?php the_post_thumbnail( 'full' ); ?>
+								<?php the_post_thumbnail( 'post-thumb' ); ?>
 								
 								<div class="project-details">
 									<div class="project-inner">

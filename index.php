@@ -20,7 +20,7 @@
 
 								<section class="entry-content cf">
 									
-									<?php the_post_thumbnail( array(640, 360) ); ?>
+									<?php the_post_thumbnail( 'post-thumb' ); ?>
 								
 									<div class="project-details">
 										<a href="<?php the_permalink() ?>" class="clickthrough" title="<?php the_title(); ?>"></a>
