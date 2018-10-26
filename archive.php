@@ -17,7 +17,11 @@
 								<?php the_archive_title( '<h1 class="archive-title">', '</h1>'); ?>
 							</div>
 							
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+							<?php 
+							if (have_posts()) : 
+							echo '<div class="flex flex-wrap">';
+							while (have_posts()) : the_post(); 
+							?>
 							
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf vc_col-sm-4 news-post' ); ?> role="article">
 
@@ -38,7 +42,7 @@
 
 							</article>
 
-							<?php endwhile; ?>
+							<?php endwhile; echo '</div>'; ?>
 
 									<?php bones_page_navi(); ?>
 
