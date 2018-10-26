@@ -992,7 +992,8 @@ figure video {
     color: #fff;
     margin: 0 auto;
     max-width: 70%;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
     .vc_row.grey-panel h1:before {
       position: absolute;
       height: 2px;
