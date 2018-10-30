@@ -39,16 +39,18 @@
 							<div class="cat-nav">
 								<div class="cat-position"></div>
 								<p class="filter-txt">Filter by:</p>
-								<a href="#" class="work-cat-button cat-active" data-cat="all">All</a>
 								<?php
 									$terms = get_terms( array(
 										'taxonomy' => 'work_cat',
 										'hide_empty' => false,
+										'orderby' => 'name',
+            							'order' => 'ASC',
 									) );
 									foreach( $terms as $term ) {
 										echo '<a href="#" class="work-cat-button" data-cat="work_cat-' . $term->slug . '">' . $term->name . '</a> ';
 									}
 								?>
+								<a href="#" class="work-cat-button cat-active" data-cat="all">All</a>
 							</div>
 							
 							<!--<div class="work-desc-wrap">
