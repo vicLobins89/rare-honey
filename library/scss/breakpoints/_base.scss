@@ -405,12 +405,6 @@ figure {
 
 .cat-nav {
 	position: relative;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-	@include prefix(justify-content, space-between, webkit moz ms);
 	padding: 0 2.3em 2.3em;
 	margin: 0 auto;
 	
@@ -425,12 +419,7 @@ figure {
 	}
 	
 	.cat-position {
-		position: absolute;
-		width: 5rem;
-		height: 4px;
-		background: $yellow;
-		bottom: 2em;
-		@include transition(left 0.3s ease-in-out);
+		display: none;
 	}
 }
 

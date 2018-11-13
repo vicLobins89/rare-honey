@@ -36,6 +36,21 @@ body {
 }
 
 .cat-nav {
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	@include prefix(justify-content, space-between, webkit moz ms);
+	
+	.cat-position {
+		position: absolute;
+		width: 5rem;
+		height: 4px;
+		background: $yellow;
+		bottom: 2em;
+		@include transition(left 0.3s ease-in-out);
+	}
 }
 
 .skew-2col {
@@ -124,7 +139,6 @@ body {
 			background: none;
 			
 			h1 {
-				max-width: 50%;
 				font-size: 5.5em;
 			}
 			

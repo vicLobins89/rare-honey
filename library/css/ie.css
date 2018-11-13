@@ -183,6 +183,25 @@ body {
   position: absolute;
   bottom: 0; }
 
+.cat-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between; }
+  .cat-nav .cat-position {
+    position: absolute;
+    width: 5rem;
+    height: 4px;
+    background: #f7c400;
+    bottom: 2em;
+    -webkit-transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out; }
+
 .skew-2col .wpb_column {
   width: 100%;
   overflow: hidden; }
@@ -231,7 +250,6 @@ body {
   padding: 4em 6em;
   background: none; }
   .vc_row.hero_work .wpb_text_column h1 {
-    max-width: 50%;
     font-size: 5.5em; }
   .vc_row.hero_work .wpb_text_column h2 {
     font-size: 1.8em; }
