@@ -1037,7 +1037,10 @@ figure video {
       margin: 0 0 10px;
       line-height: 1; }
       .vc_row.hero_work .wpb_text_column h1 a {
-        color: inherit; }
+        color: inherit;
+        font-weight: inherit; }
+        .vc_row.hero_work .wpb_text_column h1 a:hover {
+          color: #f7c400; }
     .vc_row.hero_work .wpb_text_column h2 {
       color: #f7c400;
       font-weight: 900;

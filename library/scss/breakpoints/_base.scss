@@ -185,6 +185,11 @@ figure {
 				
 				a {
 					color: inherit;
+					font-weight: inherit;
+					
+					&:hover {
+						color: $yellow;
+					}
 				}
 			}
 			
