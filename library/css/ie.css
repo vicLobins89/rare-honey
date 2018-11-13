@@ -197,6 +197,7 @@ body {
     border: none;
     text-align: left; }
   .cat-nav .cat-position {
+    display: block;
     position: absolute;
     width: 5rem;
     height: 4px;
