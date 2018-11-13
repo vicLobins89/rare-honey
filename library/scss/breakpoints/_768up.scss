@@ -43,6 +43,11 @@ body {
     display: flex;
 	@include prefix(justify-content, space-between, webkit moz ms);
 	
+	.work-cat-button, .filter-txt {
+		border: none;
+		text-align: left;
+	}
+	
 	.cat-position {
 		position: absolute;
 		width: 5rem;

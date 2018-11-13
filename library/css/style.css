@@ -1167,7 +1167,9 @@ figure video {
     vertical-align: top;
     outline: none;
     padding: 8px 10px;
-    margin: 0; }
+    margin: 0;
+    border-bottom: 1px solid #3c3c3b;
+    text-align: center; }
   .cat-nav .cat-position {
     display: none; }
 
@@ -2279,6 +2281,9 @@ TABLET & SMALLER LAPTOPS
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between; }
+    .cat-nav .work-cat-button, .cat-nav .filter-txt {
+      border: none;
+      text-align: left; }
     .cat-nav .cat-position {
       position: absolute;
       width: 5rem;

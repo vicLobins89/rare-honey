@@ -193,6 +193,9 @@ body {
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between; }
+  .cat-nav .work-cat-button, .cat-nav .filter-txt {
+    border: none;
+    text-align: left; }
   .cat-nav .cat-position {
     position: absolute;
     width: 5rem;
