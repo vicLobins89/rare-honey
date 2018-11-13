@@ -278,6 +278,11 @@ body {
   .vc_row .wpb_text_column.fw_light .h3 {
     margin-bottom: .83em; }
 
+.body_copy h1, .body_copy .h1, .body_copy h2, .body_copy .h2, .body_copy h3, .body_copy .h3, .body_copy h4, .body_copy .h4, .body_copy h5, .body_copy .h5, .body_copy p, .body_copy .p, .body_copy li {
+  font-size: 1.7em; }
+.home .body_copy {
+  font-size: 130%; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/

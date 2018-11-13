@@ -1572,7 +1572,7 @@ a, a:visited {
 H1, H2, H3, H4, H5, and Text STYLES
 ******************************************************************/
 .body_copy h1, .body_copy .h1, .body_copy h2, .body_copy .h2, .body_copy h3, .body_copy .h3, .body_copy h4, .body_copy .h4, .body_copy h5, .body_copy .h5, .body_copy p, .body_copy .p, .body_copy li {
-  font-size: 1.7em; }
+  font-size: 1.4em; }
 .body_copy h1, .body_copy .h1 {
   font-weight: 900;
   position: relative; }
@@ -1593,7 +1593,7 @@ H1, H2, H3, H4, H5, and Text STYLES
 .body_copy ul {
   padding-left: 1.7em; }
 .home .body_copy {
-  font-size: 130%; }
+  font-size: 100%; }
 .post-type-archive-work_post .body_copy .vc_col-sm-8, .blog .body_copy .vc_col-sm-8, .archive .body_copy .vc_col-sm-8 {
   float: none;
   margin: auto; }
@@ -2378,6 +2378,11 @@ TABLET & SMALLER LAPTOPS
     font-size: 100%; }
     .vc_row .wpb_text_column.fw_light .h3 {
       margin-bottom: .83em; }
+
+  .body_copy h1, .body_copy .h1, .body_copy h2, .body_copy .h2, .body_copy h3, .body_copy .h3, .body_copy h4, .body_copy .h4, .body_copy h5, .body_copy .h5, .body_copy p, .body_copy .p, .body_copy li {
+    font-size: 1.7em; }
+  .home .body_copy {
+    font-size: 130%; }
 
   /*********************
   LAYOUT & GRID STYLES
