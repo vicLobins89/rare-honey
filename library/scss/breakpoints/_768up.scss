@@ -103,6 +103,31 @@ body {
 		padding-left: 12%;
 		padding-right: 12%;
 	}
+	
+	&.hero_work {
+		.wpb_single_image {
+			&:before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: url(../images/fade-bg.png) repeat-x center bottom;
+			}
+		}
+		
+		.wpb_text_column {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			z-index: 10;
+			padding: 4em 6em;
+			
+			h1 {
+				max-width: 50%;
+				font-size: 6em;
+			}
+		}
+	}
 }
 
 .error404 {

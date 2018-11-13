@@ -217,6 +217,21 @@ body {
 .vc_row.testimonials {
   padding-left: 12%;
   padding-right: 12%; }
+.vc_row.hero_work .wpb_single_image:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/fade-bg.png) repeat-x center bottom; }
+.vc_row.hero_work .wpb_text_column {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  padding: 4em 6em; }
+  .vc_row.hero_work .wpb_text_column h1 {
+    max-width: 50%;
+    font-size: 6em; }
 
 .error404 #post-not-found .image404 {
   max-width: 260px; }

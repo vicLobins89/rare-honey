@@ -1017,28 +1017,19 @@ figure video {
   position: relative; }
   .vc_row.hero_work .wpb_single_image {
     position: relative; }
-    .vc_row.hero_work .wpb_single_image:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: url(../images/fade-bg.png) repeat-x center bottom; }
   .vc_row.hero_work .wpb_text_column {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    z-index: 10;
-    padding: 4em 6em; }
+    padding: 2rem; }
     .vc_row.hero_work .wpb_text_column h1 {
       color: #fff;
       font-weight: 100;
-      max-width: 50%;
-      font-size: 6em;
+      font-size: 4em;
       margin: 0 0 10px;
       line-height: 1; }
       .vc_row.hero_work .wpb_text_column h1 a {
         color: inherit;
-        font-weight: inherit; }
+        font-weight: inherit;
+        -webkit-transition: color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out; }
         .vc_row.hero_work .wpb_text_column h1 a:hover {
           color: #f7c400; }
     .vc_row.hero_work .wpb_text_column h2 {
@@ -2326,6 +2317,21 @@ TABLET & SMALLER LAPTOPS
   .vc_row.testimonials {
     padding-left: 12%;
     padding-right: 12%; }
+  .vc_row.hero_work .wpb_single_image:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/fade-bg.png) repeat-x center bottom; }
+  .vc_row.hero_work .wpb_text_column {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    padding: 4em 6em; }
+    .vc_row.hero_work .wpb_text_column h1 {
+      max-width: 50%;
+      font-size: 6em; }
 
   .error404 #post-not-found .image404 {
     max-width: 260px; }
