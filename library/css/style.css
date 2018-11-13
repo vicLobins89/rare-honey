@@ -1023,7 +1023,7 @@ figure video {
     .vc_row.hero_work .wpb_text_column h1 {
       color: #fff;
       font-weight: 100;
-      font-size: 4em;
+      font-size: 3em;
       margin: 0 0 10px;
       line-height: 1; }
       .vc_row.hero_work .wpb_text_column h1 a {
@@ -1036,7 +1036,7 @@ figure video {
     .vc_row.hero_work .wpb_text_column h2 {
       color: #f7c400;
       font-weight: 900;
-      font-weight: 1.8em;
+      font-size: 1.6em;
       margin: 0; }
 
 .flex {
@@ -2333,7 +2333,9 @@ TABLET & SMALLER LAPTOPS
     background: none; }
     .vc_row.hero_work .wpb_text_column h1 {
       max-width: 50%;
-      font-size: 6em; }
+      font-size: 5.5em; }
+    .vc_row.hero_work .wpb_text_column h2 {
+      font-size: 1.8em; }
 
   .error404 #post-not-found .image404 {
     max-width: 260px; }

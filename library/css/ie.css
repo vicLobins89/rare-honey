@@ -232,7 +232,9 @@ body {
   background: none; }
   .vc_row.hero_work .wpb_text_column h1 {
     max-width: 50%;
-    font-size: 6em; }
+    font-size: 5.5em; }
+  .vc_row.hero_work .wpb_text_column h2 {
+    font-size: 1.8em; }
 
 .error404 #post-not-found .image404 {
   max-width: 260px; }
