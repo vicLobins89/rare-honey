@@ -19,20 +19,6 @@
 				<div id="inner-content" class="cf">
 
 						<div id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-						
-							<!--<header class="entry-header article-header">
-								<div class="archive-description">
-									<h3 class="archive-title h3"><?php single_cat_title(  ); ?></h3>
-									<?php
-									//$cat_desc = category_description();
-									//if( $cat_desc != null ) echo $cat_desc;
-									?>
-								</div>
-							</header>-->
-							
-							<div class="vc_row grey-panel">
-								<h1 class="archive-title"><?php single_cat_title(  ); ?></h1>
-							</div>
 							
 							<?php
 							$catSlug = str_replace(' ', '-', strtolower(single_cat_title('', false)));
@@ -59,18 +45,18 @@
 
 							if ( $query1->have_posts() ) : while ( $query1->have_posts() ) : $query1->the_post(); ?>
 								
-									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf vc_col-sm-12 upcoming' ); ?> role="article">
-
-										<section class="entry-content vc_col-sm-6 cf">
-
-											<?php the_post_thumbnail( 'full' ); ?>
-
-										</section>
+									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf upcoming' ); ?> role="article">
 										
-										<section class="entry-content vc_col-sm-6 cf">
-
-											<h3 class="h3"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-											<?php the_content(); ?>
+										<section>
+											
+											<div class="vc_row wpb_row body_copy">
+												<div class="vc_col-sm-8">
+													<div class="wpb_text_column">
+														<h1><?php single_cat_title(  ); ?></h1>
+														<?php the_content(); ?>
+													</div>
+												</div>
+											</div>
 
 										</section>
 
@@ -107,8 +93,12 @@
 
 							if ( $query2->have_posts() ) : $postCount = 0; ?>
 							
-							<div class="vc_row grey-panel grey-panel">
-								<h1 class="archive-title">Past Events</h1>
+							<div class="vc_row wpb_row body_copy">
+								<div class="vc_col-sm-8">
+									<div class="wpb_text_column">
+										<h1>Past Events</h1>
+									</div>
+								</div>
 							</div>
 							
 							<?php while ( $query2->have_posts() ) : $query2->the_post(); $postCount ++; ?>

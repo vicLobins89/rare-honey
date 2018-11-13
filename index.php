@@ -6,8 +6,13 @@
 
 						<div id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							
-							<div class="vc_row grey-panel">
-								<h1 class="archive-title">News & Views<?php // echo ucfirst($pagename); ?></h1>
+							<div class="vc_row wpb_row body_copy">
+								<div class="vc_col-sm-8">
+									<div class="wpb_text_column">
+										<h1>News &amp; Views</h1>
+										<?php echo category_description(1); ?>
+									</div>
+								</div>
 							</div>
 							
 							<?php 

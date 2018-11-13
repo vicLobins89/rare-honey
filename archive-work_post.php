@@ -20,49 +20,31 @@
 
 					<div id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						
-						<div class="vc_row grey-panel">
-							<h1 class="archive-title"><?php post_type_archive_title(); ?></h1>
-						</div>
-						
-						<!--<div class="slider">
-							<?php// echo do_shortcode('[metaslider id="7596"]'); ?>
-						</div>-->
-							
-						<header class="entry-header article-header">
-							<?php 
-							/*if ( is_active_sidebar( 'work_desc' ) ) {
-								dynamic_sidebar( 'work_desc' );
-							} else { ?>
-								<h3 class="archive-title"><?php post_type_archive_title(); ?></h3>
-							<?php } */?>
-							
-							<div class="cat-nav">
-								<div class="cat-position"></div>
-								<p class="filter-txt">Filter by:</p>
-								<?php
-									$terms = get_terms( array(
-										'taxonomy' => 'work_cat',
-										'hide_empty' => false,
-										'orderby' => 'name',
-            							'order' => 'ASC',
-									) );
-									foreach( $terms as $term ) {
-										echo '<a href="#" class="work-cat-button" data-cat="work_cat-' . $term->slug . '">' . $term->name . '</a> ';
-									}
-								?>
-								<a href="#" class="work-cat-button cat-active" data-cat="all">All</a>
-							</div>
-							
-							<!--<div class="work-desc-wrap">
-								<?php /*
-									foreach( $terms as $term ) {
-										if($term->description) {
-											echo '<div class="work-desc work_cat-'.$term->slug.'">' . $term->description . '</div>';
+						<div class="vc_row wpb_row body_copy">
+							<div class="vc_col-sm-8">
+								<div class="wpb_text_column">
+									<h1><?php post_type_archive_title(); ?></h1>
+									<?php echo do_shortcode('[do_widget id=text-6]'); ?>
+								</div>
+								
+								<div class="cat-nav">
+									<div class="cat-position"></div>
+									<p class="filter-txt"><strong>Filter</strong></p>
+									<?php
+										$terms = get_terms( array(
+											'taxonomy' => 'work_cat',
+											'hide_empty' => false,
+											'orderby' => 'name',
+											'order' => 'ASC',
+										) );
+										foreach( $terms as $term ) {
+											echo '<a href="#" class="work-cat-button" data-cat="work_cat-' . $term->slug . '">' . $term->name . '</a> ';
 										}
-									}
-								*/?>
-							</div>-->
-						</header>
+									?>
+									<a href="#" class="work-cat-button cat-active" data-cat="all">All</a>
+								</div>
+							</div>
+						</div>
 
 						<?php
 						$args = array(

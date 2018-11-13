@@ -272,13 +272,14 @@ body {
     .work_side__col h2:before {
       content: '';
       position: absolute;
-      height: 2px;
-      width: 30%;
+      height: 3px;
+      width: 2.75em;
       bottom: 0;
       left: 0;
       background: #f7c400; }
   .work_side__col p {
-    margin-bottom: 1.75em; }
+    margin-bottom: 1.75em;
+    max-width: 70%; }
 
 .vc_row-flex.reverse .wpb_column:first-child {
   order: unset; }

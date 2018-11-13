@@ -14,7 +14,7 @@ function work_post_type() {
 	register_post_type( 'work_post', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
 		// let's now add all the options for this post type
 		array( 'labels' => array(
-			'name' => __( 'Our Work', 'bonestheme' ), /* This is the Title of the Group */
+			'name' => __( 'Work', 'bonestheme' ), /* This is the Title of the Group */
 			'singular_name' => __( 'Project', 'bonestheme' ), /* This is the individual type */
 			'all_items' => __( 'All Projects', 'bonestheme' ), /* the all items menu item */
 			'add_new' => __( 'Add Project', 'bonestheme' ), /* The add new menu item */
