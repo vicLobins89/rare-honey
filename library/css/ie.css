@@ -228,7 +228,8 @@ body {
   width: 100%;
   bottom: 0;
   z-index: 10;
-  padding: 4em 6em; }
+  padding: 4em 6em;
+  background: none; }
   .vc_row.hero_work .wpb_text_column h1 {
     max-width: 50%;
     font-size: 6em; }

@@ -1018,7 +1018,8 @@ figure video {
   .vc_row.hero_work .wpb_single_image {
     position: relative; }
   .vc_row.hero_work .wpb_text_column {
-    padding: 2rem; }
+    padding: 2rem;
+    background: #3c3c3b; }
     .vc_row.hero_work .wpb_text_column h1 {
       color: #fff;
       font-weight: 100;
@@ -2328,7 +2329,8 @@ TABLET & SMALLER LAPTOPS
     width: 100%;
     bottom: 0;
     z-index: 10;
-    padding: 4em 6em; }
+    padding: 4em 6em;
+    background: none; }
     .vc_row.hero_work .wpb_text_column h1 {
       max-width: 50%;
       font-size: 6em; }
