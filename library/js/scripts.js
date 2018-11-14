@@ -145,8 +145,29 @@ jQuery(document).ready(function($) {
 	setInterval(cyclerStag, 3000);
 	
 	
-	// Vid on scroll
+	// GATED
+	var gatedHtml,
+		gatedLinkHref,
+		$contentArea = $('article.page');
 	
+	$.ajax({
+		url: window.location.origin+'/gated-content/',
+		type: 'GET',
+		success: function(data) {
+			gatedHtml = $(data).find('#gated-content').contents();
+		}
+	});
+
+	document.addEventListener( 'wpcf7mailsent', function(event) {
+		if(event.detail.contactFormId === '7223') {
+			setTimeout(function(){
+				$contentArea.empty().prepend(gatedHtml);
+			},1000);
+		}
+	}, false );
+	
+	
+	// Vid on scroll
 	if( $('video.on-scroll').length ){
 		$(window).scroll(function(){
 			$('video.on-scroll').each(function(i, el){
