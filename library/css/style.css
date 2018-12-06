@@ -1926,8 +1926,6 @@ POSTS & CONTENT STYLES
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
-  background: #eee;
-  padding: 5px;
   /* images inside wp-caption */ }
   .wp-caption img {
     max-width: 100%;
@@ -1935,8 +1933,7 @@ POSTS & CONTENT STYLES
     width: 100%; }
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
-    margin: 4px 0 7px;
-    text-align: center; }
+    margin: 4px 0 7px; }
 
 /* end .wp-caption */
 /* image gallery styles */
