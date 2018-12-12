@@ -146,24 +146,26 @@ jQuery(document).ready(function($) {
 	
 	
 	// GATED
-	var gatedHtml,
-		$contentArea = $('article.page');
-	
-	$.ajax({
-		url: window.location.origin+'/gated-content/',
-		type: 'GET',
-		success: function(data) {
-			gatedHtml = $(data).find('#gated-content').contents();
-		}
-	});
+	if( $('body').hasClass('page-id-7269') ) {
+		var gatedHtml,
+			$contentArea = $('article.page');
 
-	document.addEventListener( 'wpcf7mailsent', function(event) {
-		if(event.detail.contactFormId === '7272') {
-			setTimeout(function(){
-				$contentArea.empty().prepend(gatedHtml);
-			},1000);
-		}
-	}, false );
+		$.ajax({
+			url: window.location.origin+'/gated-content/',
+			type: 'GET',
+			success: function(data) {
+				gatedHtml = $(data).find('#gated-content').contents();
+			}
+		});
+
+		document.addEventListener( 'wpcf7mailsent', function(event) {
+			if(event.detail.contactFormId === '7272') {
+				setTimeout(function(){
+					$contentArea.empty().prepend(gatedHtml);
+				},1000);
+			}
+		}, false );
+	}
 	
 	
 	// Vid on scroll
