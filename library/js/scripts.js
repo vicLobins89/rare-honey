@@ -158,7 +158,7 @@ jQuery(document).ready(function($) {
 	});
 
 	document.addEventListener( 'wpcf7mailsent', function(event) {
-		if(event.detail.contactFormId === '7223') {
+		if(event.detail.contactFormId === '7272') {
 			setTimeout(function(){
 				$contentArea.empty().prepend(gatedHtml);
 			},1000);
