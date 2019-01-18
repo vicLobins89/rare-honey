@@ -41,11 +41,10 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-	@include prefix(justify-content, space-between, webkit moz ms);
+	@include prefix(justify-content, space-evenly, webkit moz ms);
 	
 	.work-cat-button, .filter-txt {
 		border: none;
-		text-align: left;
 	}
 	
 	.cat-position {
@@ -141,7 +140,7 @@ body {
 			width: 100%;
 			bottom: 0;
 			z-index: 10;
-			padding: 4em 6em;
+			padding: 3em;
 			background: none;
 			
 			h1 {
@@ -240,6 +239,10 @@ body {
 	
 	.home & {
 		font-size: 130%;
+	}
+	
+	.vc_col-sm-8 {
+		width: 100%;
 	}
 }
 

@@ -357,9 +357,9 @@ jQuery(document).ready(function($) {
 		var imgHeight = $('.vert-align-img img').height();
 		$('.vert-align').innerHeight(imgHeight);
 		
-		var clientLogoWidth = $('.client-logo').outerWidth();
-		var calculateHeight = (clientLogoWidth / 125) * 81;
-		$('.client-logo').css('max-height', calculateHeight);
+//		var clientLogoWidth = $('.client-logo').outerWidth();
+//		var calculateHeight = (clientLogoWidth / 125) * 81;
+//		$('.client-logo').css('max-height', calculateHeight);
 		
 		var profileWidth = $('#team .vc_row').outerWidth();
 		var calculateProfileHeight = (profileWidth / 222) * 139;

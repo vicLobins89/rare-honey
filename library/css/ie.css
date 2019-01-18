@@ -189,13 +189,12 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between; }
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
+  -ms-justify-content: space-evenly;
+  justify-content: space-evenly; }
   .cat-nav .work-cat-button, .cat-nav .filter-txt {
-    border: none;
-    text-align: left; }
+    border: none; }
   .cat-nav .cat-position {
     display: block;
     position: absolute;
@@ -251,7 +250,7 @@ body {
   width: 100%;
   bottom: 0;
   z-index: 10;
-  padding: 4em 6em;
+  padding: 3em;
   background: none; }
   .vc_row.hero_work .wpb_text_column h1 {
     font-size: 5.5em; }
@@ -306,6 +305,8 @@ body {
   font-size: 1.7em; }
 .home .body_copy {
   font-size: 130%; }
+.body_copy .vc_col-sm-8 {
+  width: 100%; }
 
 /*********************
 LAYOUT & GRID STYLES
@@ -454,6 +455,15 @@ h2, .h2 {
 
 .work_side__col {
   font-size: 100%; }
+
+.body_copy .vc_col-sm-8 {
+  width: 66.66666667%; }
+
+.numbers-vid {
+  padding: 3em 8em; }
+
+.client-logo img {
+  padding: 2rem; }
 
 /******************************************************************
 ADDITIONAL IE FIXES

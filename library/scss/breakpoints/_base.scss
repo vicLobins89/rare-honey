@@ -408,7 +408,7 @@ video {
 	
 	.work-cat-button, .filter-txt {
 		display: block;
-		font-size: 1rem;
+		font-size: 14px;
 		font-weight: 100;
 		vertical-align: top;
 		outline: none;
@@ -741,7 +741,7 @@ video {
 		border-right: 1px solid #ccc;
 		filter: grayscale(100%);
 		opacity: 0.8;
-		padding: 40px;
+		padding: 1rem;
 		
 		.bottom-row & {
 			border-bottom: 1px solid #ccc;
@@ -826,6 +826,12 @@ video {
 	&.faded-04 .overlay {
 		background: rgba($black, 0.4);
 	}
+}
+
+.numbers-vid {
+	padding: 1em;
+	border: none;
+	outline: none;
 }
 
 /********************

@@ -1162,7 +1162,7 @@ video {
   margin: 0 auto; }
   .cat-nav .work-cat-button, .cat-nav .filter-txt {
     display: block;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 100;
     vertical-align: top;
     outline: none;
@@ -1422,7 +1422,7 @@ video {
     border-right: 1px solid #ccc;
     filter: grayscale(100%);
     opacity: 0.8;
-    padding: 1rem; }
+    padding: 40px; }
     .bottom-row .client-logo img {
       border-bottom: 1px solid #ccc; }
     .client-logo img:hover {
@@ -1466,11 +1466,6 @@ video {
   background: rgba(0, 0, 0, 0.6); }
 .faded-bg.faded-04 .overlay {
   background: rgba(0, 0, 0, 0.4); }
-
-.numbers-vid {
-  padding: 1em;
-  border: none;
-  outline: none; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -2279,12 +2274,13 @@ TABLET & SMALLER LAPTOPS
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -webkit-justify-content: space-evenly;
-    -moz-justify-content: space-evenly;
-    -ms-justify-content: space-evenly;
-    justify-content: space-evenly; }
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between; }
     .cat-nav .work-cat-button, .cat-nav .filter-txt {
-      border: none; }
+      border: none;
+      text-align: left; }
     .cat-nav .cat-position {
       display: block;
       position: absolute;
@@ -2340,7 +2336,7 @@ TABLET & SMALLER LAPTOPS
     width: 100%;
     bottom: 0;
     z-index: 10;
-    padding: 3em;
+    padding: 4em 6em;
     background: none; }
     .vc_row.hero_work .wpb_text_column h1 {
       font-size: 5.5em; }
@@ -2395,8 +2391,6 @@ TABLET & SMALLER LAPTOPS
     font-size: 1.7em; }
   .home .body_copy {
     font-size: 130%; }
-  .body_copy .vc_col-sm-8 {
-    width: 100%; }
 
   /*********************
   LAYOUT & GRID STYLES
@@ -2548,16 +2542,7 @@ DESKTOP
       z-index: 999; }
 
   .work_side__col {
-    font-size: 100%; }
-
-  .body_copy .vc_col-sm-8 {
-    width: 66.66666667%; }
-
-  .numbers-vid {
-    padding: 3em 8em; }
-
-  .client-logo img {
-    padding: 2rem; } }
+    font-size: 100%; } }
 /*********************
 LARGE VIEWING SIZE
 *********************/
