@@ -52,8 +52,10 @@
 											<div class="vc_row wpb_row body_copy">
 												<div class="vc_col-sm-8">
 													<div class="wpb_text_column">
-														<h1><?php single_cat_title(  ); ?></h1>
-														<?php the_content(); ?>
+														<h1><?php single_cat_title(  ); ?></h1><br>
+														<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+														<div style="font-size: .7rem;"><?php the_excerpt(); ?></div>
+														<a href="<?php the_permalink() ?>"><strong>Click here to read more</strong></a>
 													</div>
 												</div>
 											</div>
