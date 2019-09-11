@@ -126,7 +126,7 @@ jQuery(document).ready(function($) {
 	function adminBarAdjust() {
 		if( $('#wpadminbar').length ) {
 			var adminBarHeight = $('#wpadminbar').outerHeight();
-			$('.main-menu, .header').css('top', adminBarHeight);
+			$('.header').css('top', adminBarHeight);
 		}
 	}
 	
@@ -390,3 +390,15 @@ jQuery(document).ready(function($) {
 	});
 
 }); /* end of as page load scripts */
+
+
+// And scroll class on scroll
+var headerEl = document.querySelector("header.header"),
+	w = window;
+w.onscroll = function(){    
+    if( w.scrollY >= 200 ) {
+        headerEl.classList.add('scrolled');
+    } else {
+        headerEl.classList.remove('scrolled');
+    }
+};

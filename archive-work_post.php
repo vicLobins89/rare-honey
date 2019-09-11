@@ -30,6 +30,7 @@
 								<div class="cat-nav">
 									<div class="cat-position"></div>
 									<p class="filter-txt"><strong>Filter</strong></p>
+									<a href="#" class="work-cat-button cat-active" data-cat="all">All</a>
 									<?php
 										$terms = get_terms( array(
 											'taxonomy' => 'work_cat',
@@ -41,7 +42,6 @@
 											echo '<a href="#" class="work-cat-button" data-cat="work_cat-' . $term->slug . '">' . $term->name . '</a> ';
 										}
 									?>
-									<a href="#" class="work-cat-button cat-active" data-cat="all">All</a>
 								</div>
 							</div>
 						</div>
@@ -55,30 +55,30 @@
 						$the_query = new WP_Query( $args );
 						
 						if ($the_query->have_posts()) : 
-						echo '<div class="flex flex-wrap">';
+						echo '<div class="flex flex-wrap grid-thumbs">';
 						while ($the_query->have_posts()) : $the_query->the_post(); 
 						?>
 						
 						<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf show vc_col-sm-4 work-post' ); ?> role="article" data-layout="<?php echo get_post_meta(get_the_ID(), 'new_project', true); ?>">
 
-							<section class="entry-content cf">
+							<div class="entry-content wpb_wrapper cf">
 
-								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
-									<?php the_post_thumbnail( 'post-thumb' ); ?>
+								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="thumb">
+									<?php the_post_thumbnail( 'square' ); ?>
 								</a>
 								
-								<div class="project-details">
-									<a href="<?php the_permalink() ?>" class="clickthrough" title="<?php the_title(); ?>"></a>
+								<div class="project-details wpb_text_column">
+									<?php /* <a href="<?php the_permalink() ?>" class="clickthrough" title="<?php the_title(); ?>"></a> */ ?>
 									<div class="project-inner">
-										<p>
+										<h3>
 											<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-										</p>
+										</h3>
 										<?php the_excerpt(); ?>
-										<?php // echo get_the_term_list( $post->ID, 'work_cat', '<div class="cats">', ', ', '</div>' ); ?>
+										<p><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read case study</a></p>
 									</div>
 								</div>
 
-							</section>
+							</div>
 
 						</article>
 						

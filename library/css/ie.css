@@ -48,6 +48,7 @@ FONT FACE
   src: url("../fonts/berthold_walbaum_book_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/berthold_walbaum_book_regular-webfont.woff2") format("woff2"), url("../fonts/berthold_walbaum_book_regular-webfont.woff") format("woff"), url("../fonts/berthold_walbaum_book_regular-webfont.ttf") format("truetype"), url("../fonts/berthold_walbaum_book_regular-webfont.svg#berthold_walbaum_bookregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /*
 Typographical defaults: http://www.newnet-soft.com/blog/csstypography
 */
@@ -100,6 +101,16 @@ Author: Vic Lobins
 Stylesheet: IE Grid Styles
 
 ******************************************************************/
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: 481px and Up Stylesheet
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
 #team .vc_row .profile p {
   font-size: 1em; }
 
@@ -127,27 +138,18 @@ nav.main-menu {
 .nav {
   width: 350px; }
 
-/* .menu is clearfixed inside mixins.scss */
-.menu {
-  /* end .menu ul */ }
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-
-/* end .menu */
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 /* entry content */
 .entry-content .alignleft, .entry-content img.alignleft {
   margin-right: 1.5em;
-  display: inline;
   float: left; }
+
 .entry-content .alignright, .entry-content img.alignright {
   margin-left: 1.5em;
-  display: inline;
   float: right; }
+
 .entry-content .aligncenter, .entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;
@@ -155,10 +157,6 @@ POSTS & CONTENT STYLES
   clear: both; }
 
 /* end .entry-content */
-/*********************
-FOOTER STYLES
-*********************/
-/* end .footer-links */
 /******************************************************************
 Site Name: Honey
 Author: Vic Lobins
@@ -174,8 +172,10 @@ body {
 
 .bg-fixed.vc_custom_1500288003875 {
   background-position: center top 50px !important; }
+
 .bg-fixed.vc_custom_1500288033939 {
   background-position: center !important; }
+
 .bg-fixed.vc_custom_1500288074930 {
   background-position: center bottom !important; }
 
@@ -230,6 +230,7 @@ body {
 
 .landing-text h2 {
   font-size: 2.2em; }
+
 .landing-text h3 {
   font-size: 1.75em; }
 
@@ -239,17 +240,12 @@ body {
 .vc_row.testimonials {
   padding-left: 12%;
   padding-right: 12%; }
-.vc_row.hero_work .wpb_single_image:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url(../images/fade-bg.png) repeat-x center bottom;
-  opacity: .4; }
+
 .vc_row.hero_work .wpb_text_column {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  top: 50%;
+  transform: translate(0, -40%);
   z-index: 10;
   padding: 3em;
   background: none; }
@@ -257,6 +253,108 @@ body {
     font-size: 4.5em; }
   .vc_row.hero_work .wpb_text_column h2 {
     font-size: 1.8em; }
+  .vc_row.hero_work .wpb_text_column a {
+    color: inherit;
+    font-weight: inherit; }
+
+.grid-thumbs .wpb_wrapper {
+  position: relative; }
+  .grid-thumbs .wpb_wrapper:hover .wpb_text_column {
+    opacity: 1;
+    visibility: visible; }
+  .grid-thumbs .wpb_wrapper .thumb {
+    display: block;
+    font-size: 0; }
+  .grid-thumbs .wpb_wrapper .wpb_text_column {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    background: #f7c400;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    -webit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center; }
+    .grid-thumbs .wpb_wrapper .wpb_text_column h3, .grid-thumbs .wpb_wrapper .wpb_text_column .h3 {
+      font-weight: 600;
+      font-size: 1.6em;
+      margin-bottom: 1rem; }
+
+.color-blocks .wpb_wrapper {
+  max-width: 75%;
+  margin: auto; }
+
+.color-blocks h3, .color-blocks .h3 {
+  font-weight: 600;
+  font-size: 1.6em;
+  margin-bottom: 1rem; }
+
+.thumb-links .wpb_wrapper {
+  position: relative; }
+  .thumb-links .wpb_wrapper .wpb_text_column {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    -webit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center; }
+    .thumb-links .wpb_wrapper .wpb_text_column .wpb_wrapper {
+      position: relative;
+      -webkit-transition: transform 0.14s ease-in-out;
+      transition: transform 0.14s ease-in-out; }
+      .thumb-links .wpb_wrapper .wpb_text_column .wpb_wrapper:after {
+        position: absolute;
+        background: #cccccc;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 4px;
+        left: 4px;
+        z-index: -1;
+        opacity: 0;
+        -webkit-transition: opacity 0.14s ease-in-out;
+        transition: opacity 0.14s ease-in-out; }
+      .thumb-links .wpb_wrapper .wpb_text_column .wpb_wrapper:hover {
+        transform: translate(-4px, -4px); }
+        .thumb-links .wpb_wrapper .wpb_text_column .wpb_wrapper:hover:after {
+          opacity: 1; }
+    .thumb-links .wpb_wrapper .wpb_text_column p {
+      position: relative;
+      z-index: 1;
+      background: #fff;
+      text-align: center;
+      margin: 0;
+      padding: .75rem 2rem;
+      font-weight: 500;
+      font-size: 1.2em; }
+    .thumb-links .wpb_wrapper .wpb_text_column a {
+      font-weight: inherit; }
 
 .error404 #post-not-found .image404 {
   max-width: 260px; }
@@ -302,10 +400,12 @@ body {
   .vc_row .wpb_text_column.fw_light .h3 {
     margin-bottom: .83em; }
 
-.body_copy h1, .body_copy .h1, .body_copy h2, .body_copy .h2, .body_copy h3, .body_copy .h3, .body_copy h4, .body_copy .h4, .body_copy h5, .body_copy .h5, .body_copy p, .body_copy .p, .body_copy li {
-  font-size: 1.7em; }
-.home .body_copy {
-  font-size: 130%; }
+.body_copy h1 {
+  font-size: 1.5em; }
+
+.body_copy .h1, .body_copy h2, .body_copy .h2, .body_copy h3, .body_copy .h3, .body_copy h4, .body_copy .h4, .body_copy h5, .body_copy .h5, .body_copy p, .body_copy .p, .body_copy li {
+  font-size: 1.35em; }
+
 .body_copy .vc_col-sm-8 {
   width: 100%; }
 
@@ -315,9 +415,34 @@ LAYOUT & GRID STYLES
 .wrap {
   width: 760px; }
 
+#content {
+  margin-top: 0; }
+
 /*********************
 HEADER STYLES
 *********************/
+.header {
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .header.scrolled {
+    -webkit-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.56);
+    -ms-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.56);
+    background: #fff; }
+
+.social {
+  position: relative;
+  float: right;
+  right: auto;
+  margin-right: 2rem; }
+
+#logo {
+  float: left;
+  margin-left: 2rem;
+  margin-top: .85rem; }
+
 .macmillan {
   position: absolute;
   display: block;
@@ -327,48 +452,111 @@ HEADER STYLES
   .macmillan img {
     max-width: 100%; }
 
+.menu-button {
+  display: none; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
+nav.main-menu {
+  position: relative;
+  width: auto;
+  height: auto;
+  left: auto;
+  right: 1rem;
+  top: 7px;
+  opacity: 1;
+  background: none;
+  min-height: auto;
+  visibility: visible;
+  float: right; }
+
 .nav {
+  width: auto;
+  height: auto;
+  background: none;
+  padding: 0;
+  min-height: auto;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
+    display: inline-block;
     position: relative;
-    /* showing sub-menus */ }
+    margin: 0 1.35rem; }
+    .nav li .plus {
+      display: none; }
     .nav li:hover ul.sub-menu,
     .nav li:hover ul.children {
-      max-height: 400px; }
+      max-height: 500px;
+      padding: 1rem; }
     .nav li.menu-item-has-children .plus:before {
       bottom: 2px; }
     .nav li.menu-item-has-children:hover .plus:before {
       -webkit-transform: rotate(180deg);
       -moz-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
       transform: rotate(180deg); }
     .nav li a {
-      font-size: 1em; }
+      font-weight: bold;
+      font-size: 1em;
+      color: #000;
+      border: none;
+      padding: 1rem; }
       .nav li a:hover, .nav li a:focus {
         color: #333; }
     .nav li ul.sub-menu,
     .nav li ul.children {
-      -webkit-transition: max-height 0.6s ease-in-out;
-      transition: max-height 0.6s ease-in-out;
-      /* highlight sub-menu current page */ }
+      position: absolute;
+      width: 238%;
+      padding: 0 1rem;
+      margin: 0;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      .scrolled .nav li ul.sub-menu, .scrolled
+      .nav li ul.children {
+        background: white;
+        -webkit-box-shadow: 7px 9px 10px -8px rgba(0, 0, 0, 0.56);
+        -moz-box-shadow: 7px 9px 10px -8px rgba(0, 0, 0, 0.56);
+        -ms-box-shadow: 7px 9px 10px -8px rgba(0, 0, 0, 0.56);
+        box-shadow: 7px 9px 10px -8px rgba(0, 0, 0, 0.56); }
       .nav li ul.sub-menu li,
       .nav li ul.children li {
+        margin: 0;
         /*
-        third level
-        */ }
-        .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
-        .nav li ul.children li a:hover,
-        .nav li ul.children li a:focus {
-          color: #333; }
+				third level
+				*/ }
+        .nav li ul.sub-menu li a,
+        .nav li ul.children li a {
+          color: #000;
+          padding: 1rem; }
+          .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
+          .nav li ul.children li a:hover,
+          .nav li ul.children li a:focus {
+            color: #333; }
         .nav li ul.sub-menu li ul,
         .nav li ul.children li ul {
           top: 0;
           left: 100%; }
+  .nav li.current-menu-item a,
+  .nav li.current_page_item a,
+  .nav li.current-page-ancestor a,
+  .nav li.current_page_ancestor a {
+    position: relative; }
+    .nav li.current-menu-item a:after,
+    .nav li.current_page_item a:after,
+    .nav li.current-page-ancestor a:after,
+    .nav li.current_page_ancestor a:after {
+      display: block;
+      content: '';
+      width: 4rem;
+      height: 3px;
+      background: #f7c400;
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      margin-left: -2rem; }
 
 /* end .nav */
 /*********************
@@ -391,17 +579,6 @@ SIDEBARS & ASIDES
       margin-top: 0.75em;
       padding-left: 1em; }
 
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
 /*********************
 FOOTER STYLES
 *********************/
@@ -458,7 +635,7 @@ h2, .h2 {
   font-size: 100%; }
 
 .body_copy .vc_col-sm-8 {
-  width: 66.66666667%; }
+  width: 60%; }
 
 .numbers-vid {
   padding: 3em 8em; }

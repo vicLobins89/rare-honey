@@ -98,6 +98,7 @@ if ( ! isset( $content_width ) ) {
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 add_image_size( 'post-thumb', 530, 360, true );
+add_image_size( 'square', 600, 600, true );
 
 /*
 to add more sizes, simply copy a line from above
@@ -126,6 +127,7 @@ function bones_custom_image_sizes( $sizes ) {
         'bones-thumb-600' => __('600px by 150px'),
         'bones-thumb-300' => __('300px by 100px'),
         'post-thumb' => __('530px by 360px'),
+        'square' => __('600px by 600px'),
     ) );
 }
 
