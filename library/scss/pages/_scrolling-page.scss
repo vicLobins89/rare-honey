@@ -1,0 +1,35 @@
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Scrolling Page Template Styles
+
+******************************************************************/
+
+.page-scrolling {
+    .header {
+        height: auto;
+    }
+
+    nav.side-menu {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+
+        ul {
+
+        }
+
+        li {
+            text-transform: uppercase;
+
+            a {
+
+            }
+        }
+    }
+
+    #content {
+        margin-top: 0;
+    }
+}

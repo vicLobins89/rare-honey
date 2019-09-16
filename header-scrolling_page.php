@@ -64,7 +64,7 @@
 
 	<body itemscope itemtype="http://schema.org/WebPage" data-layout="<?php echo get_post_meta(get_the_ID(), 'new_project', true); ?>">
 
-		<div id="container">
+		<div id="container" class="page-scrolling">
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
