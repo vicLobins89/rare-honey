@@ -444,6 +444,7 @@ FONT FACE
   src: url("../fonts/berthold_walbaum_book_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/berthold_walbaum_book_regular-webfont.woff2") format("woff2"), url("../fonts/berthold_walbaum_book_regular-webfont.woff") format("woff"), url("../fonts/berthold_walbaum_book_regular-webfont.ttf") format("truetype"), url("../fonts/berthold_walbaum_book_regular-webfont.svg#berthold_walbaum_bookregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /*
 Typographical defaults: http://www.newnet-soft.com/blog/csstypography
 */
@@ -538,31 +539,27 @@ Mobile Grid Styles
     padding-right: 0.75em;
     width: 100%;
     padding-right: 0; }
-
   .m-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%; }
-
   .m-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%; }
-
   .m-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%; }
-
   .m-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%; }
-
   .m-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%; } }
+
 /* Portrait tablet to landscape */
 @media (min-width: 768px) and (max-width: 1029px) {
   .t-all {
@@ -570,51 +567,43 @@ Mobile Grid Styles
     padding-right: 0.75em;
     width: 100%;
     padding-right: 0; }
-
   .t-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%; }
-
   .t-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%; }
-
   .t-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%; }
-
   .t-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%; }
-
   .t-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%; }
-
   .t-1of5 {
     float: left;
     padding-right: 0.75em;
     width: 20%; }
-
   .t-2of5 {
     float: left;
     padding-right: 0.75em;
     width: 40%; }
-
   .t-3of5 {
     float: left;
     padding-right: 0.75em;
     width: 60%; }
-
   .t-4of5 {
     float: left;
     padding-right: 0.75em;
     width: 80%; } }
+
 /* Landscape to small desktop */
 @media (min-width: 1030px) {
   .d-all {
@@ -622,111 +611,91 @@ Mobile Grid Styles
     padding-right: 0.75em;
     width: 100%;
     padding-right: 0; }
-
   .d-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%; }
-
   .d-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%; }
-
   .d-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%; }
-
   .d-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%; }
-
   .d-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%; }
-
   .d-1of5 {
     float: left;
     padding-right: 0.75em;
     width: 20%; }
-
   .d-2of5 {
     float: left;
     padding-right: 0.75em;
     width: 40%; }
-
   .d-3of5 {
     float: left;
     padding-right: 0.75em;
     width: 60%; }
-
   .d-4of5 {
     float: left;
     padding-right: 0.75em;
     width: 80%; }
-
   .d-1of6 {
     float: left;
     padding-right: 0.75em;
     width: 16.6666666667%; }
-
   .d-1of7 {
     float: left;
     padding-right: 0.75em;
     width: 14.2857142857%; }
-
   .d-2of7 {
     float: left;
     padding-right: 0.75em;
     width: 28.5714286%; }
-
   .d-3of7 {
     float: left;
     padding-right: 0.75em;
     width: 42.8571429%; }
-
   .d-4of7 {
     float: left;
     padding-right: 0.75em;
     width: 57.1428572%; }
-
   .d-5of7 {
     float: left;
     padding-right: 0.75em;
     width: 71.4285715%; }
-
   .d-6of7 {
     float: left;
     padding-right: 0.75em;
     width: 85.7142857%; }
-
   .d-1of8 {
     float: left;
     padding-right: 0.75em;
     width: 12.5%; }
-
   .d-1of9 {
     float: left;
     padding-right: 0.75em;
     width: 11.1111111111%; }
-
   .d-1of10 {
     float: left;
     padding-right: 0.75em;
     width: 10%; }
-
   .d-1of11 {
     float: left;
     padding-right: 0.75em;
     width: 9.09090909091%; }
-
   .d-1of12 {
     float: left;
     padding-right: 0.75em;
     width: 8.33%; } }
+
 /*********************
 IMPORTING MODULES
 *********************/
@@ -825,7 +794,23 @@ button.load-more {
   margin: 3rem auto;
   display: block; }
 
-input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .field {
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea,
+.field {
   display: block;
   height: 40px;
   line-height: 1em;
@@ -842,28 +827,92 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
   background-color: #fff;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
-  .um-form input[type="text"],
-  .um-form input[type="password"],
-  .um-form input[type="datetime"],
-  .um-form input[type="datetime-local"],
-  .um-form input[type="date"],
-  .um-form input[type="month"],
-  .um-form input[type="time"],
-  .um-form input[type="week"],
-  .um-form input[type="number"],
-  .um-form input[type="email"],
-  .um-form input[type="url"],
-  .um-form input[type="search"],
-  .um-form input[type="tel"],
-  .um-form input[type="color"],
-  .um-form select,
-  .um-form textarea,
-  .um-form .field {
+  .um-form input[type="text"], .um-form
+  input[type="password"], .um-form
+  input[type="datetime"], .um-form
+  input[type="datetime-local"], .um-form
+  input[type="date"], .um-form
+  input[type="month"], .um-form
+  input[type="time"], .um-form
+  input[type="week"], .um-form
+  input[type="number"], .um-form
+  input[type="email"], .um-form
+  input[type="url"], .um-form
+  input[type="search"], .um-form
+  input[type="tel"], .um-form
+  input[type="color"], .um-form
+  select, .um-form
+  textarea, .um-form
+  .field {
     max-width: none; }
-  input[type="text"]:focus, input[type="text"]:active, input[type="password"]:focus, input[type="password"]:active, input[type="datetime"]:focus, input[type="datetime"]:active, input[type="datetime-local"]:focus, input[type="datetime-local"]:active, input[type="date"]:focus, input[type="date"]:active, input[type="month"]:focus, input[type="month"]:active, input[type="time"]:focus, input[type="time"]:active, input[type="week"]:focus, input[type="week"]:active, input[type="number"]:focus, input[type="number"]:active, input[type="email"]:focus, input[type="email"]:active, input[type="url"]:focus, input[type="url"]:active, input[type="search"]:focus, input[type="search"]:active, input[type="tel"]:focus, input[type="tel"]:active, input[type="color"]:focus, input[type="color"]:active, select:focus, select:active, textarea:focus, textarea:active, .field:focus, .field:active {
+  input[type="text"]:focus, input[type="text"]:active,
+  input[type="password"]:focus,
+  input[type="password"]:active,
+  input[type="datetime"]:focus,
+  input[type="datetime"]:active,
+  input[type="datetime-local"]:focus,
+  input[type="datetime-local"]:active,
+  input[type="date"]:focus,
+  input[type="date"]:active,
+  input[type="month"]:focus,
+  input[type="month"]:active,
+  input[type="time"]:focus,
+  input[type="time"]:active,
+  input[type="week"]:focus,
+  input[type="week"]:active,
+  input[type="number"]:focus,
+  input[type="number"]:active,
+  input[type="email"]:focus,
+  input[type="email"]:active,
+  input[type="url"]:focus,
+  input[type="url"]:active,
+  input[type="search"]:focus,
+  input[type="search"]:active,
+  input[type="tel"]:focus,
+  input[type="tel"]:active,
+  input[type="color"]:focus,
+  input[type="color"]:active,
+  select:focus,
+  select:active,
+  textarea:focus,
+  textarea:active,
+  .field:focus,
+  .field:active {
     background-color: white;
     outline: none; }
-  input[type="text"].error, input[type="text"].is-invalid, input[type="password"].error, input[type="password"].is-invalid, input[type="datetime"].error, input[type="datetime"].is-invalid, input[type="datetime-local"].error, input[type="datetime-local"].is-invalid, input[type="date"].error, input[type="date"].is-invalid, input[type="month"].error, input[type="month"].is-invalid, input[type="time"].error, input[type="time"].is-invalid, input[type="week"].error, input[type="week"].is-invalid, input[type="number"].error, input[type="number"].is-invalid, input[type="email"].error, input[type="email"].is-invalid, input[type="url"].error, input[type="url"].is-invalid, input[type="search"].error, input[type="search"].is-invalid, input[type="tel"].error, input[type="tel"].is-invalid, input[type="color"].error, input[type="color"].is-invalid, select.error, select.is-invalid, textarea.error, textarea.is-invalid, .field.error, .field.is-invalid {
+  input[type="text"].error, input[type="text"].is-invalid,
+  input[type="password"].error,
+  input[type="password"].is-invalid,
+  input[type="datetime"].error,
+  input[type="datetime"].is-invalid,
+  input[type="datetime-local"].error,
+  input[type="datetime-local"].is-invalid,
+  input[type="date"].error,
+  input[type="date"].is-invalid,
+  input[type="month"].error,
+  input[type="month"].is-invalid,
+  input[type="time"].error,
+  input[type="time"].is-invalid,
+  input[type="week"].error,
+  input[type="week"].is-invalid,
+  input[type="number"].error,
+  input[type="number"].is-invalid,
+  input[type="email"].error,
+  input[type="email"].is-invalid,
+  input[type="url"].error,
+  input[type="url"].is-invalid,
+  input[type="search"].error,
+  input[type="search"].is-invalid,
+  input[type="tel"].error,
+  input[type="tel"].is-invalid,
+  input[type="color"].error,
+  input[type="color"].is-invalid,
+  select.error,
+  select.is-invalid,
+  textarea.error,
+  textarea.is-invalid,
+  .field.error,
+  .field.is-invalid {
     color: #fbe3e4;
     border-color: #fbe3e4;
     background-color: #fff;
@@ -871,7 +920,39 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
     background-repeat: no-repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
     outline-color: #fbe3e4; }
-  input[type="text"].success, input[type="text"].is-valid, input[type="password"].success, input[type="password"].is-valid, input[type="datetime"].success, input[type="datetime"].is-valid, input[type="datetime-local"].success, input[type="datetime-local"].is-valid, input[type="date"].success, input[type="date"].is-valid, input[type="month"].success, input[type="month"].is-valid, input[type="time"].success, input[type="time"].is-valid, input[type="week"].success, input[type="week"].is-valid, input[type="number"].success, input[type="number"].is-valid, input[type="email"].success, input[type="email"].is-valid, input[type="url"].success, input[type="url"].is-valid, input[type="search"].success, input[type="search"].is-valid, input[type="tel"].success, input[type="tel"].is-valid, input[type="color"].success, input[type="color"].is-valid, select.success, select.is-valid, textarea.success, textarea.is-valid, .field.success, .field.is-valid {
+  input[type="text"].success, input[type="text"].is-valid,
+  input[type="password"].success,
+  input[type="password"].is-valid,
+  input[type="datetime"].success,
+  input[type="datetime"].is-valid,
+  input[type="datetime-local"].success,
+  input[type="datetime-local"].is-valid,
+  input[type="date"].success,
+  input[type="date"].is-valid,
+  input[type="month"].success,
+  input[type="month"].is-valid,
+  input[type="time"].success,
+  input[type="time"].is-valid,
+  input[type="week"].success,
+  input[type="week"].is-valid,
+  input[type="number"].success,
+  input[type="number"].is-valid,
+  input[type="email"].success,
+  input[type="email"].is-valid,
+  input[type="url"].success,
+  input[type="url"].is-valid,
+  input[type="search"].success,
+  input[type="search"].is-valid,
+  input[type="tel"].success,
+  input[type="tel"].is-valid,
+  input[type="color"].success,
+  input[type="color"].is-valid,
+  select.success,
+  select.is-valid,
+  textarea.success,
+  textarea.is-valid,
+  .field.success,
+  .field.is-valid {
     color: #e6efc2;
     border-color: #e6efc2;
     background-color: #fff;
@@ -879,11 +960,107 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
     background-repeat: no-repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
     outline-color: #e6efc2; }
-  input[type="text"][disabled], input[type="text"].is-disabled, input[type="password"][disabled], input[type="password"].is-disabled, input[type="datetime"][disabled], input[type="datetime"].is-disabled, input[type="datetime-local"][disabled], input[type="datetime-local"].is-disabled, input[type="date"][disabled], input[type="date"].is-disabled, input[type="month"][disabled], input[type="month"].is-disabled, input[type="time"][disabled], input[type="time"].is-disabled, input[type="week"][disabled], input[type="week"].is-disabled, input[type="number"][disabled], input[type="number"].is-disabled, input[type="email"][disabled], input[type="email"].is-disabled, input[type="url"][disabled], input[type="url"].is-disabled, input[type="search"][disabled], input[type="search"].is-disabled, input[type="tel"][disabled], input[type="tel"].is-disabled, input[type="color"][disabled], input[type="color"].is-disabled, select[disabled], select.is-disabled, textarea[disabled], textarea.is-disabled, .field[disabled], .field.is-disabled {
+  input[type="text"][disabled], input[type="text"].is-disabled,
+  input[type="password"][disabled],
+  input[type="password"].is-disabled,
+  input[type="datetime"][disabled],
+  input[type="datetime"].is-disabled,
+  input[type="datetime-local"][disabled],
+  input[type="datetime-local"].is-disabled,
+  input[type="date"][disabled],
+  input[type="date"].is-disabled,
+  input[type="month"][disabled],
+  input[type="month"].is-disabled,
+  input[type="time"][disabled],
+  input[type="time"].is-disabled,
+  input[type="week"][disabled],
+  input[type="week"].is-disabled,
+  input[type="number"][disabled],
+  input[type="number"].is-disabled,
+  input[type="email"][disabled],
+  input[type="email"].is-disabled,
+  input[type="url"][disabled],
+  input[type="url"].is-disabled,
+  input[type="search"][disabled],
+  input[type="search"].is-disabled,
+  input[type="tel"][disabled],
+  input[type="tel"].is-disabled,
+  input[type="color"][disabled],
+  input[type="color"].is-disabled,
+  select[disabled],
+  select.is-disabled,
+  textarea[disabled],
+  textarea.is-disabled,
+  .field[disabled],
+  .field.is-disabled {
     cursor: not-allowed;
     border-color: #cfcfcf;
     opacity: 0.6; }
-    input[type="text"][disabled]:focus, input[type="text"][disabled]:active, input[type="text"].is-disabled:focus, input[type="text"].is-disabled:active, input[type="password"][disabled]:focus, input[type="password"][disabled]:active, input[type="password"].is-disabled:focus, input[type="password"].is-disabled:active, input[type="datetime"][disabled]:focus, input[type="datetime"][disabled]:active, input[type="datetime"].is-disabled:focus, input[type="datetime"].is-disabled:active, input[type="datetime-local"][disabled]:focus, input[type="datetime-local"][disabled]:active, input[type="datetime-local"].is-disabled:focus, input[type="datetime-local"].is-disabled:active, input[type="date"][disabled]:focus, input[type="date"][disabled]:active, input[type="date"].is-disabled:focus, input[type="date"].is-disabled:active, input[type="month"][disabled]:focus, input[type="month"][disabled]:active, input[type="month"].is-disabled:focus, input[type="month"].is-disabled:active, input[type="time"][disabled]:focus, input[type="time"][disabled]:active, input[type="time"].is-disabled:focus, input[type="time"].is-disabled:active, input[type="week"][disabled]:focus, input[type="week"][disabled]:active, input[type="week"].is-disabled:focus, input[type="week"].is-disabled:active, input[type="number"][disabled]:focus, input[type="number"][disabled]:active, input[type="number"].is-disabled:focus, input[type="number"].is-disabled:active, input[type="email"][disabled]:focus, input[type="email"][disabled]:active, input[type="email"].is-disabled:focus, input[type="email"].is-disabled:active, input[type="url"][disabled]:focus, input[type="url"][disabled]:active, input[type="url"].is-disabled:focus, input[type="url"].is-disabled:active, input[type="search"][disabled]:focus, input[type="search"][disabled]:active, input[type="search"].is-disabled:focus, input[type="search"].is-disabled:active, input[type="tel"][disabled]:focus, input[type="tel"][disabled]:active, input[type="tel"].is-disabled:focus, input[type="tel"].is-disabled:active, input[type="color"][disabled]:focus, input[type="color"][disabled]:active, input[type="color"].is-disabled:focus, input[type="color"].is-disabled:active, select[disabled]:focus, select[disabled]:active, select.is-disabled:focus, select.is-disabled:active, textarea[disabled]:focus, textarea[disabled]:active, textarea.is-disabled:focus, textarea.is-disabled:active, .field[disabled]:focus, .field[disabled]:active, .field.is-disabled:focus, .field.is-disabled:active {
+    input[type="text"][disabled]:focus, input[type="text"][disabled]:active, input[type="text"].is-disabled:focus, input[type="text"].is-disabled:active,
+    input[type="password"][disabled]:focus,
+    input[type="password"][disabled]:active,
+    input[type="password"].is-disabled:focus,
+    input[type="password"].is-disabled:active,
+    input[type="datetime"][disabled]:focus,
+    input[type="datetime"][disabled]:active,
+    input[type="datetime"].is-disabled:focus,
+    input[type="datetime"].is-disabled:active,
+    input[type="datetime-local"][disabled]:focus,
+    input[type="datetime-local"][disabled]:active,
+    input[type="datetime-local"].is-disabled:focus,
+    input[type="datetime-local"].is-disabled:active,
+    input[type="date"][disabled]:focus,
+    input[type="date"][disabled]:active,
+    input[type="date"].is-disabled:focus,
+    input[type="date"].is-disabled:active,
+    input[type="month"][disabled]:focus,
+    input[type="month"][disabled]:active,
+    input[type="month"].is-disabled:focus,
+    input[type="month"].is-disabled:active,
+    input[type="time"][disabled]:focus,
+    input[type="time"][disabled]:active,
+    input[type="time"].is-disabled:focus,
+    input[type="time"].is-disabled:active,
+    input[type="week"][disabled]:focus,
+    input[type="week"][disabled]:active,
+    input[type="week"].is-disabled:focus,
+    input[type="week"].is-disabled:active,
+    input[type="number"][disabled]:focus,
+    input[type="number"][disabled]:active,
+    input[type="number"].is-disabled:focus,
+    input[type="number"].is-disabled:active,
+    input[type="email"][disabled]:focus,
+    input[type="email"][disabled]:active,
+    input[type="email"].is-disabled:focus,
+    input[type="email"].is-disabled:active,
+    input[type="url"][disabled]:focus,
+    input[type="url"][disabled]:active,
+    input[type="url"].is-disabled:focus,
+    input[type="url"].is-disabled:active,
+    input[type="search"][disabled]:focus,
+    input[type="search"][disabled]:active,
+    input[type="search"].is-disabled:focus,
+    input[type="search"].is-disabled:active,
+    input[type="tel"][disabled]:focus,
+    input[type="tel"][disabled]:active,
+    input[type="tel"].is-disabled:focus,
+    input[type="tel"].is-disabled:active,
+    input[type="color"][disabled]:focus,
+    input[type="color"][disabled]:active,
+    input[type="color"].is-disabled:focus,
+    input[type="color"].is-disabled:active,
+    select[disabled]:focus,
+    select[disabled]:active,
+    select.is-disabled:focus,
+    select.is-disabled:active,
+    textarea[disabled]:focus,
+    textarea[disabled]:active,
+    textarea.is-disabled:focus,
+    textarea.is-disabled:active,
+    .field[disabled]:focus,
+    .field[disabled]:active,
+    .field.is-disabled:focus,
+    .field.is-disabled:active {
       background-color: #d5edf8; }
 
 input[type="password"] {
@@ -919,6 +1096,7 @@ GENERAL STYLES
 @media screen and (max-width: 600px) {
   #wpadminbar {
     position: fixed; } }
+
 body {
   font-size: 0.8em;
   line-height: 1.5;
@@ -1010,9 +1188,11 @@ video {
   .vc_row.grey-panel.past-events {
     padding-top: 1em !important;
     padding-bottom: 1em !important; }
+
 .vc_row.testimonials {
   padding-left: 2%;
   padding-right: 2%; }
+
 .vc_row.hero_work {
   position: relative; }
   .vc_row.hero_work .wpb_single_image {
@@ -1127,12 +1307,15 @@ video {
 
 .work_side__col h2 {
   position: relative; }
+
 .work_side__col h6 {
   margin: .5rem 0;
   font-size: 1rem; }
+
 .work_side__col p {
   font-size: 1.4em;
   font-weight: 100; }
+
 .work_side__col a {
   font-weight: 100;
   -webkit-transition: color 0.2s ease-in-out;
@@ -1142,6 +1325,7 @@ video {
 
 .home .vc_row-flex .vc_col-sm-9 {
   order: 1; }
+
 .home .vc_row-flex .vc_col-sm-3 {
   order: 2;
   border-bottom: 1px solid #ccc; }
@@ -1202,6 +1386,7 @@ video {
 
 .single-work_post video {
   width: 100%; }
+
 .single-work_post .wpb_text_column p {
   font-size: 1.1em;
   margin-bottom: 8px;
@@ -1431,22 +1616,27 @@ video {
 
 .recent-posts-wrapper.vc_row .wpb_text_column.recent-posts-widget {
   padding: 22% 2.3em; }
+
 .recent-posts-wrapper .recent-posts-widget .wpb_wrapper div p {
   display: none; }
+
 .recent-posts-wrapper .recent-posts-widget a {
   cursor: pointer; }
   .recent-posts-wrapper .recent-posts-widget a:hover {
     color: #f7c400; }
+
 .recent-posts-wrapper .wpb_text_column p a {
   text-decoration: underline;
   font-size: 1.3em; }
   .recent-posts-wrapper .wpb_text_column p a:hover {
     color: #f7c400; }
+
 .recent-posts-wrapper .wpb_text_column * {
   font-size: 1.1em;
   margin: 0;
   color: #fff;
   text-align: center; }
+
 .recent-posts-wrapper ul {
   padding: 0;
   list-style: none; }
@@ -1458,12 +1648,16 @@ video {
   top: 0;
   left: 0;
   z-index: 1; }
+
 .faded-bg .wpb_column {
   z-index: 999; }
+
 .faded-bg.faded-08 .overlay {
   background: rgba(0, 0, 0, 0.8); }
+
 .faded-bg.faded-06 .overlay {
   background: rgba(0, 0, 0, 0.6); }
+
 .faded-bg.faded-04 .overlay {
   background: rgba(0, 0, 0, 0.4); }
 
@@ -1508,6 +1702,7 @@ WORDPRESS BODY CLASSES
 
 .single #content {
   background: #fff; }
+
 .single img.full-width {
   width: 100%; }
 
@@ -1554,10 +1749,10 @@ a, a:visited {
     color: #535352; }
   a:link, a:visited:link {
     /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 /******************************************************************
@@ -1565,6 +1760,7 @@ H1, H2, H3, H4, H5, and Text STYLES
 ******************************************************************/
 .body_copy h1, .body_copy .h1, .body_copy h2, .body_copy .h2, .body_copy h3, .body_copy .h3, .body_copy h4, .body_copy .h4, .body_copy h5, .body_copy .h5, .body_copy p, .body_copy .p, .body_copy li {
   font-size: 1.4em; }
+
 .body_copy h1, .body_copy .h1 {
   font-weight: 900;
   position: relative; }
@@ -1576,16 +1772,21 @@ H1, H2, H3, H4, H5, and Text STYLES
     background: #f7c400;
     bottom: -8px;
     left: 0; }
+
 .body_copy p, .body_copy a, .body_copy li {
   font-weight: 100; }
+
 .body_copy p {
   margin: 1em 0; }
   .body_copy p:first-child {
     margin-top: 0; }
+
 .body_copy ul {
   padding-left: 1.7em; }
+
 .home .body_copy {
   font-size: 100%; }
+
 .post-type-archive-work_post .body_copy .vc_col-sm-8, .blog .body_copy .vc_col-sm-8, .archive .body_copy .vc_col-sm-8 {
   float: none;
   margin: auto; }
@@ -1647,6 +1848,7 @@ p {
 
 .landing-form .wpb_text_column {
   padding-bottom: 1em !important; }
+
 .landing-form input[type="text"], .landing-form input[type="password"], .landing-form input[type="datetime"], .landing-form input[type="datetime-local"], .landing-form input[type="date"], .landing-form input[type="month"], .landing-form input[type="time"], .landing-form input[type="week"], .landing-form input[type="number"], .landing-form input[type="email"], .landing-form input[type="url"], .landing-form input[type="search"], .landing-form input[type="tel"], .landing-form input[type="color"], .landing-form select, .landing-form textarea, .landing-form .field {
   background: #ededed; }
 
@@ -1807,28 +2009,33 @@ POSTS & CONTENT STYLES
     bottom: -13px;
     left: 0;
     background: #f7c400; }
+
 .list ul {
   padding: 0;
   font-size: 1.2em; }
   .list ul:before {
     content: '';
     display: table; }
+
 .list.list--2col ul li {
   float: left;
   display: inline;
   width: 40%; }
+
 .list.list--2col.fw_light ul {
   margin-top: 3rem;
   font-size: 1rem; }
   .list.list--2col.fw_light ul li {
     font-size: 1.75em;
     width: 50%; }
+
 .list.list--nostyle ul {
   list-style-type: none; }
 
 .hentry header {
   border-bottom: 1px solid #e5e5e5;
   padding: 1.5em; }
+
 .hentry footer {
   padding: 1.5em;
   border-top: 1px solid #e5e5e5; }
@@ -1997,6 +2204,7 @@ PAGE NAVI STYLES
 /* fallback previous & next links */
 .wp-prev-next .prev-link {
   float: left; }
+
 .wp-prev-next .next-link {
   float: right; }
 
@@ -2188,10 +2396,9 @@ LARGER MOBILE DEVICES
 @media only screen and (min-width: 481px) {
   #team .vc_row .profile p {
     font-size: 1em; }
-
   /*********************
-  HEADER STYLES
-  *********************/
+HEADER STYLES
+*********************/
   .social {
     display: block;
     position: absolute;
@@ -2202,17 +2409,14 @@ LARGER MOBILE DEVICES
       margin-left: 20px; }
       .social a i {
         font-size: 1.4em; }
-
   /*********************
-  NAVIGATION STYLES
-  *********************/
+NAVIGATION STYLES
+*********************/
   nav.main-menu {
     left: -350px;
     width: 350px; }
-
   .nav {
     width: 350px; }
-
   /* .menu is clearfixed inside mixins.scss */
   .menu {
     /* end .menu ul */ }
@@ -2220,11 +2424,10 @@ LARGER MOBILE DEVICES
       /* end .menu ul li */
       /* highlight current page */
       /* end current highlighters */ }
-
   /* end .menu */
   /*********************
-  POSTS & CONTENT STYLES
-  *********************/
+POSTS & CONTENT STYLES
+*********************/
   /* entry content */
   .entry-content .alignleft, .entry-content img.alignleft {
     margin-right: 1.5em;
@@ -2239,40 +2442,37 @@ LARGER MOBILE DEVICES
     margin-left: auto;
     display: block;
     clear: both; }
-
   /* end .entry-content */
   /*********************
-  FOOTER STYLES
-  *********************/
+FOOTER STYLES
+*********************/
   /* end .footer-links */ }
+
 /*********************
 TABLET & SMALLER LAPTOPS
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  Site Name: Honey
-  Author: Vic Lobins
-  
-  Stylesheet: Tablet & Small Desktop Stylesheet
-  
-  ******************************************************************/
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+******************************************************************/
   /*********************
-  GENERAL STYLES
-  *********************/
+GENERAL STYLES
+*********************/
   body {
     font-size: 100%; }
-
   .bg-fixed.vc_custom_1500288003875 {
     background-position: center top 50px !important; }
   .bg-fixed.vc_custom_1500288033939 {
     background-position: center !important; }
   .bg-fixed.vc_custom_1500288074930 {
     background-position: center bottom !important; }
-
   .force-bottom {
     position: absolute;
     bottom: 0; }
-
   .cat-nav {
     display: -webkit-flex;
     display: -moz-flex;
@@ -2294,7 +2494,6 @@ TABLET & SMALLER LAPTOPS
       bottom: 2em;
       -webkit-transition: left 0.3s ease-in-out;
       transition: left 0.3s ease-in-out; }
-
   .skew-2col .wpb_column {
     width: 100%;
     overflow: hidden; }
@@ -2302,11 +2501,9 @@ TABLET & SMALLER LAPTOPS
       display: none; }
     .skew-2col .wpb_column > .vc_column-inner {
       padding-right: 7% !important; }
-
   .video-wrapper h1 {
     margin-top: 18%;
     font-size: 3em; }
-
   #team .vc_row,
   .image_hover_100 .vc_row {
     width: 50%;
@@ -2314,18 +2511,14 @@ TABLET & SMALLER LAPTOPS
     #team .vc_row .profile p,
     .image_hover_100 .vc_row .profile p {
       font-size: 0.8em; }
-
   .image_hover_100 .vc_row {
     width: 100%; }
-
   .landing-text h2 {
     font-size: 2.2em; }
   .landing-text h3 {
     font-size: 1.75em; }
-
   .vc_row .vert-align.wpb_text_column {
     padding: 1em 2.3em; }
-
   .vc_row.testimonials {
     padding-left: 12%;
     padding-right: 12%; }
@@ -2347,22 +2540,18 @@ TABLET & SMALLER LAPTOPS
       font-size: 4.5em; }
     .vc_row.hero_work .wpb_text_column h2 {
       font-size: 1.8em; }
-
   .error404 #post-not-found .image404 {
     max-width: 260px; }
-
   .client-logo {
     width: 25%; }
     .client-logo img {
       padding: 40px; }
-
   .work-vid .vid-text {
     top: 0.75em;
     left: 1em;
     font-size: 3rem; }
     .work-vid .vid-text span {
       font-size: 20px; }
-
   .work_side__col {
     font-size: 75%;
     margin-bottom: 0 !important; }
@@ -2382,32 +2571,27 @@ TABLET & SMALLER LAPTOPS
     .work_side__col p {
       margin-bottom: 1.75em;
       max-width: 70%; }
-
   .vc_row-flex.reverse .wpb_column:first-child {
     order: unset; }
-
   .vc_row .wpb_text_column.fw_light {
     padding: 4em;
     font-size: 100%; }
     .vc_row .wpb_text_column.fw_light .h3 {
       margin-bottom: .83em; }
-
   .body_copy h1, .body_copy .h1, .body_copy h2, .body_copy .h2, .body_copy h3, .body_copy .h3, .body_copy h4, .body_copy .h4, .body_copy h5, .body_copy .h5, .body_copy p, .body_copy .p, .body_copy li {
     font-size: 1.7em; }
   .home .body_copy {
     font-size: 130%; }
   .body_copy .vc_col-sm-8 {
     width: 100%; }
-
   /*********************
-  LAYOUT & GRID STYLES
-  *********************/
+LAYOUT & GRID STYLES
+*********************/
   .wrap {
     width: 760px; }
-
   /*********************
-  HEADER STYLES
-  *********************/
+HEADER STYLES
+*********************/
   .macmillan {
     position: absolute;
     display: block;
@@ -2416,10 +2600,9 @@ TABLET & SMALLER LAPTOPS
     top: 7px; }
     .macmillan img {
       max-width: 100%; }
-
   /*********************
-  NAVIGATION STYLES
-  *********************/
+NAVIGATION STYLES
+*********************/
   .nav {
     /* end .menu ul li */
     /* highlight current page */
@@ -2449,8 +2632,8 @@ TABLET & SMALLER LAPTOPS
         .nav li ul.sub-menu li,
         .nav li ul.children li {
           /*
-          third level
-          */ }
+				third level
+				*/ }
           .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
           .nav li ul.children li a:hover,
           .nav li ul.children li a:focus {
@@ -2459,18 +2642,15 @@ TABLET & SMALLER LAPTOPS
           .nav li ul.children li ul {
             top: 0;
             left: 100%; }
-
   /* end .nav */
   /*********************
-  SIDEBARS & ASIDES
-  *********************/
+SIDEBARS & ASIDES
+*********************/
   .sidebar {
     margin-top: 2.2em; }
-
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em; }
-
   .widget {
     padding: 0 10px;
     margin: 2.2em 0; }
@@ -2480,7 +2660,6 @@ TABLET & SMALLER LAPTOPS
       .widget ul li ul {
         margin-top: 0.75em;
         padding-left: 1em; }
-
   /* links widget */
   /* meta widget */
   /* pages widget */
@@ -2493,44 +2672,39 @@ TABLET & SMALLER LAPTOPS
   /* search widget */
   /* text widget */
   /*********************
-  FOOTER STYLES
-  *********************/
+FOOTER STYLES
+*********************/
   .copyright a {
     display: inline-block; }
-
   .corner-bg {
     background-size: contain; }
-
   /* end .footer-links */ }
+
 /*********************
 DESKTOP
 *********************/
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-  Site Name: Honey
-  Author: Vic Lobins
-  
-  Stylesheet: Desktop Stylsheet
-  
-  ******************************************************************/
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Desktop Stylsheet
+
+******************************************************************/
   .wrap {
     width: 1040px; }
-
   h1, .h1 {
     font-size: 3.2em;
     line-height: 1.25em; }
     h1.single-title, .h1.single-title {
       font-weight: bold;
       font-size: 3em; }
-
   h2, .h2 {
     font-size: 2em; }
-
   #team .vc_row {
     width: 33.33333%; }
     #team .vc_row .profile p {
       font-size: 0.7em; }
-
   .skew-2col .wpb_column {
     width: 50%; }
     .skew-2col .wpb_column:first-child {
@@ -2547,32 +2721,28 @@ DESKTOP
       right: 0;
       position: absolute;
       z-index: 999; }
-
   .work_side__col {
     font-size: 100%; }
-
   .body_copy .vc_col-sm-8 {
     width: 66.66666667%; }
-
   .numbers-vid {
     padding: 3em 8em; }
-
   .client-logo img {
     padding: 2rem; } }
+
 /*********************
 LARGE VIEWING SIZE
 *********************/
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name: Honey
-  Author: Vic Lobins
-  
-  Stylesheet: Super Large Monitor Stylesheet
-  
-  ******************************************************************/
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Super Large Monitor Stylesheet
+
+******************************************************************/
   #team .vc_row .profile p {
     font-size: 1em; }
-
   .boxed-layout {
     background: #f2f2f2; }
     .boxed-layout .header {
@@ -2583,80 +2753,81 @@ LARGE VIEWING SIZE
       width: 90%;
       max-width: 1500px;
       margin: auto; }
-
   .vc_row .wpb_text_column.fw_light {
     font-size: 140%; } }
+
 /*********************
 EXTRA LARGE VIEWING SIZE
 *********************/
 @media only screen and (min-width: 1800px) {
   /******************************************************************
-  Site Name: Honey
-  Author: Vic Lobins
-  
-  Stylesheet: Extra Large Monitor Stylesheet
-  
-  ******************************************************************/
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Extra Large Monitor Stylesheet
+
+******************************************************************/
   .vc_row .wpb_text_column.fw_light {
     font-size: 200%; } }
+
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 *********************/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name: Honey
-  Author: Vic Lobins
-  
-  Stylesheet: Retina Screens & Devices Stylesheet
-  
-  ******************************************************************/
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Retina Screens & Devices Stylesheet
+
+******************************************************************/
   /* 
-  
-  EXAMPLE 
-  Let's say you have an image and you need to make sure it looks ok
-  on retina screens. Let's say we have an icon which dimension are
-  24px x 24px. In your regular stylesheets, it would look something
-  like this:
-  
-  .icon {
-  	width: 24px;
-  	height: 24px;
-  	background: url(img/test.png) no-repeat;
-  }
-  
-  For retina screens, we have to make some adjustments, so that image
-  doesn't look blurry. So, taking into account the image above and the
-  dimensions, this is what we would put in our retina stylesheet:
-  
-  .icon {
-  	background: url(img/test@2x.png) no-repeat;
-  	background-size: 24px 24px;
-  }
-  
-  So, you would create the same icon, but at double the resolution, meaning 
-  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
-  (this is pretty standard practice). Set the background image so it matches
-  the original dimensions and you are good to go. 
-  
-  */ }
+
+EXAMPLE 
+Let's say you have an image and you need to make sure it looks ok
+on retina screens. Let's say we have an icon which dimension are
+24px x 24px. In your regular stylesheets, it would look something
+like this:
+
+.icon {
+	width: 24px;
+	height: 24px;
+	background: url(img/test.png) no-repeat;
+}
+
+For retina screens, we have to make some adjustments, so that image
+doesn't look blurry. So, taking into account the image above and the
+dimensions, this is what we would put in our retina stylesheet:
+
+.icon {
+	background: url(img/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+So, you would create the same icon, but at double the resolution, meaning 
+it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+(this is pretty standard practice). Set the background image so it matches
+the original dimensions and you are good to go. 
+
+*/ }
+
 /*********************
 PRINT STYLESHEET
 *********************/
 @media print {
   /******************************************************************
-  Site Name: Honey
-  Author: Vic Lobins
-  
-  Stylesheet: Print Stylesheet
-  
-  ******************************************************************/
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Print Stylesheet
+
+******************************************************************/
   * {
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
     filter: none !important;
     -ms-filter: none !important; }
-
   a, a:visited {
     color: #444 !important;
     text-decoration: underline; }
@@ -2664,41 +2835,34 @@ PRINT STYLESHEET
       content: " (" attr(href) ")"; }
     a abbr[title]:after, a:visited abbr[title]:after {
       content: " (" attr(title) ")"; }
-
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
-
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   thead {
     display: table-header-group; }
-
   tr, img {
     page-break-inside: avoid; }
-
   img {
     max-width: 100% !important; }
-
   @page {
     margin: 0.5cm; }
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
-
   h2,
   h3 {
     page-break-after: avoid; }
-
   .sidebar,
   .page-navigation,
   .wp-prev-next,
   .respond-form,
   nav {
     display: none; } }
+
 /*********************
 OVERRIDES STYLESHEET
 *********************/
@@ -2814,3 +2978,7 @@ Plugin and other CSS overrides
     margin-bottom: 1em; }
     [data-layout="new-layout"].single-work_post .wpb_text_column p strong, [data-layout="new-layout"].single-work_post .wpb_text_column p b {
       font-weight: 600; }
+
+/*********************
+PAGES STYLESHEET
+*********************/

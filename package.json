@@ -1,0 +1,23 @@
+{
+  "name": "rare-honey",
+  "version": "1.0.0",
+  "description": "Honey Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch library/scss -o library/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicLobins89/rare-honey.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vicLobins89/rare-honey/issues"
+  },
+  "homepage": "https://github.com/vicLobins89/rare-honey#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
