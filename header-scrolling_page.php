@@ -74,7 +74,7 @@
                         <li><a href="#mini-meal">mini meal</a></li>
                         <li><a href="#mindful">mindful</a></li>
                         <li><a href="#sensory">sensory</a></li>
-                        <li><a href="#responsibilities">responsibilities</a></li>
+                        <li><a href="#responsibility">Responsibility</a></li>
                         <li><a href="#adventure">adventure</a></li>
                         <li><a href="#hungry">hungry</a></li>
                     </ul>

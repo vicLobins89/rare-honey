@@ -2989,15 +2989,173 @@ Author: Vic Lobins
 Stylesheet: Scrolling Page Template Styles
 
 ******************************************************************/
-.page-scrolling .header {
-  height: auto; }
+html {
+  scroll-behavior: smooth;
+  width: 100%; }
 
-.page-scrolling nav.side-menu {
-  position: fixed;
-  top: 10px;
-  right: 10px; }
-  .page-scrolling nav.side-menu li {
-    text-transform: uppercase; }
-
-.page-scrolling #content {
-  margin-top: 0; }
+.page-scrolling {
+  width: 100%; }
+  .page-scrolling .header {
+    height: auto; }
+  .page-scrolling nav.side-menu {
+    position: fixed;
+    top: 1rem;
+    right: 2rem; }
+    .page-scrolling nav.side-menu.black li a {
+      color: #333; }
+    .page-scrolling nav.side-menu.black li:after {
+      border-color: #333; }
+    .page-scrolling nav.side-menu.black li:before {
+      background: #333; }
+    .page-scrolling nav.side-menu.black li:hover:after, .page-scrolling nav.side-menu.black li.active:after {
+      background: #333; }
+    .page-scrolling nav.side-menu ul {
+      text-align: right; }
+    .page-scrolling nav.side-menu li {
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      position: relative;
+      font-size: 0.9rem;
+      vertical-align: middle;
+      cursor: pointer; }
+      .page-scrolling nav.side-menu li a {
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      .page-scrolling nav.side-menu li:before, .page-scrolling nav.side-menu li:after {
+        content: '';
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      .page-scrolling nav.side-menu li:after {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px; }
+      .page-scrolling nav.side-menu li:before {
+        display: block;
+        position: absolute;
+        width: 2px;
+        height: 15px;
+        top: 19px;
+        right: 6px;
+        background: #fff; }
+      .page-scrolling nav.side-menu li:hover:after, .page-scrolling nav.side-menu li.active:after {
+        background: #fff; }
+      .page-scrolling nav.side-menu li:last-child:before {
+        content: none; }
+    @media only screen and (max-width: 767px) {
+      .page-scrolling nav.side-menu {
+        display: none; } }
+  .page-scrolling #content {
+    margin-top: 0;
+    overflow: hidden; }
+  .page-scrolling .overlayed-text {
+    position: relative; }
+    .page-scrolling .overlayed-text .wpb_text_column {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 99999; }
+      .page-scrolling .overlayed-text .wpb_text_column h1 {
+        width: 55%;
+        font-weight: bold;
+        line-height: 1.15; }
+        .page-scrolling .overlayed-text .wpb_text_column h1:after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 3.35rem;
+          background: #f7c400;
+          margin-top: 1rem; }
+      .page-scrolling .overlayed-text .wpb_text_column h2 {
+        width: 55%;
+        font-size: 4.5rem;
+        font-weight: bold; }
+      @media only screen and (max-width: 767px) {
+        .page-scrolling .overlayed-text .wpb_text_column {
+          top: 10px;
+          left: 10px;
+          padding: 10px; }
+          .page-scrolling .overlayed-text .wpb_text_column h1 {
+            font-size: 1.5rem; }
+          .page-scrolling .overlayed-text .wpb_text_column h2 {
+            font-size: 2rem; } }
+  .page-scrolling .two-col p {
+    width: 50%;
+    padding: 10px;
+    float: left; }
+  .page-scrolling .two-col:after {
+    content: '';
+    display: table;
+    clear: both; }
+  @media only screen and (max-width: 767px) {
+    .page-scrolling .two-col .wpb_wrapper p {
+      float: none;
+      width: auto;
+      margin: 0;
+      padding: 0; } }
+  .page-scrolling .dash-top {
+    position: relative; }
+    .page-scrolling .dash-top:before {
+      content: '';
+      display: block;
+      width: 3.5rem;
+      height: 2px;
+      background: #333;
+      margin: 0 auto .5rem; }
+    .page-scrolling .dash-top.white:before {
+      background: #fff; }
+    .page-scrolling .dash-top.left:before {
+      margin: 0 0 .5rem; }
+  .page-scrolling .dash-bottom p {
+    position: relative; }
+    .page-scrolling .dash-bottom p:after {
+      content: '';
+      display: block;
+      width: 3.5rem;
+      height: 2px;
+      background: #333;
+      margin: 1rem auto 0; }
+  .page-scrolling .dash-bottom.white p:after {
+    background: #fff; }
+  .page-scrolling p {
+    font-size: 1.25em; }
+  .page-scrolling .footer-panel {
+    background-image: url(http://localhost/honey/wp-content/uploads/2019/09/honey-angle.png);
+    background-size: 200px;
+    background-position: right bottom !important;
+    background-repeat: no-repeat; }
+    .page-scrolling .footer-panel .wpb_text_column {
+      width: 55%; }
+    .page-scrolling .footer-panel h3 {
+      font-family: 'berthold_walbaum_bookregular';
+      font-size: 6rem;
+      font-weight: bold;
+      margin-bottom: 1rem; }
+    @media only screen and (max-width: 767px) {
+      .page-scrolling .footer-panel {
+        background-image: none; }
+        .page-scrolling .footer-panel .wpb_text_column {
+          width: auto; }
+        .page-scrolling .footer-panel h3 {
+          font-size: 3rem; } }
+  .page-scrolling #intro > .wpb_column {
+    position: relative; }
+    .page-scrolling #intro > .wpb_column:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: url(https://honey.co.uk/wp-content/uploads/2017/02/yellow-angle.png);
+      background-size: 70px;
+      background-position: right bottom;
+      background-repeat: no-repeat; }

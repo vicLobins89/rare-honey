@@ -389,4 +389,28 @@ jQuery(document).ready(function($) {
 		resizeSkew();
 	});
 
+
+	// Snacking page
+	if( $('nav.side-menu').length ){
+		var $menu = $('nav.side-menu'),
+			menu_height = $menu.outerHeight(),
+			$window = $(window),
+			panel_distance = $('.nav-black').offset().top,
+			panel_height = 0;
+
+		$('.nav-black').each(function(){
+			panel_height += $('.nav-black').outerHeight();
+		});
+
+		$(window).scroll(function(){
+			console.log( $window.scrollTop() + ' ' + panel_height + ' ' + panel_distance );
+
+			if( ($window.scrollTop() + menu_height ) >= panel_distance && $window.scrollTop() < ( panel_distance + panel_height ) ) {
+				$menu.addClass('black');
+			} else {
+				$menu.removeClass('black');
+			}
+		});
+	}
+
 }); /* end of as page load scripts */
