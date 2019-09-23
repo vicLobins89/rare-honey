@@ -1,37 +1,40 @@
-[vc_row el_class="overlayed-text yellow-triangle" el_id="intro"][vc_column][vc_single_image image="7517" img_size="full"][vc_column_text]
+[vc_row el_class="overlayed-text yellow-triangle" el_id="intro"][vc_column][vc_single_image image="7600" img_size="full"][vc_column_text]
 <h1>It’s snacking – but not as we know it</h1>
-[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1568722292827{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #3c3c3b !important;}"][vc_column width="1/4"][/vc_column][vc_column width="1/2"][vc_column_text]
-<p style="text-align: center;"><span style="color: #ffffff;">Snacking used to be a loaded word. To some even a dirty word. Snacking was something you did in a dark corner with varying degrees of residual guilt. But the world of snacking is changing. We see some big shifts in consumer appetite driven by some key trends.</span></p>
-[/vc_column_text][/vc_column][vc_column width="1/4"][/vc_column][/vc_row][vc_row el_class="overlayed-text" el_id="mini-meal"][vc_column][vc_single_image image="7520" img_size="full"][vc_column_text el_class="berthold"]
+[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1568722292827{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #3c3c3b !important;}"][vc_column width="1/4"][/vc_column][vc_column width="1/2"][vc_column_text el_class="dash-bottom white"]
+<p style="text-align: center;"><strong><span style="color: #ffffff;">Snacking used to be a loaded word. To some even a dirty word. Snacking was something you did in a dark corner with varying degrees of residual guilt. But the world of snacking is changing. We see some big shifts in consumer appetite driven by some key trends.</span></strong></p>
+[/vc_column_text][/vc_column][vc_column width="1/4"][/vc_column][/vc_row][vc_row el_class="overlayed-text" el_id="mini-meal"][vc_column][vc_single_image image="7597" img_size="full"][vc_column_text el_class="berthold"]
 <h2>Mini Meal Moment</h2>
-[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1568722607471{padding-top: 3rem !important;padding-bottom: 3rem !important;}"][vc_column width="1/6"][/vc_column][vc_column width="2/3"][vc_column_text el_class="two-col"]When does a snack become a meal? The truth is the lines between snack and meals are getting blurred. The traditional convention of 3 square meals
-a day is being challenged by a
+[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1569247711263{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #f2f2f2 !important;}" el_class="nav-black"][vc_column width="1/4"][/vc_column][vc_column width="1/2"][vc_column_text el_class="two-col dash-top"]When does a snack become a meal? The truth is the lines between snack and meals are getting blurred. The traditional convention of 3 square meals a day is being challenged by a
 
-new research which suggests it’s better for us to eat little and often but more importantly it suits our own rushing around lifestyle. Get ready for the emerging category of snack meals.[/vc_column_text][/vc_column][vc_column width="1/6"][/vc_column][/vc_row][vc_row el_class="overlayed-text" el_id="mindful"][vc_column][vc_single_image image="7521" img_size="full"][vc_column_text el_class="berthold"]
+new research which suggests it’s better for us to eat little and often but more importantly it suits our own rushing around lifestyle. Get ready for the emerging category of snack meals.[/vc_column_text][/vc_column][vc_column width="1/4"][/vc_column][/vc_row][vc_row el_class="overlayed-text nav-black" el_id="mindful"][vc_column][vc_single_image image="7593" img_size="full"][vc_column_text el_class="berthold"]
 <h2>Mindful Munching</h2>
-[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1568722761069{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #3a5916 !important;}"][vc_column width="1/6"][/vc_column][vc_column width="2/3"][vc_column_text el_class="two-col"]<span style="color: #ffffff;">Gone are the days of mindless munching. Fat. Sugar. Salt. A list of words that makes a generation of mindful eaters shudder.</span>
+[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1569237318066{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #3a5916 !important;}"][vc_column width="1/4"][/vc_column][vc_column width="1/2"][vc_column_text el_class="two-col dash-top white"]<span style="color: #ffffff;">Gone are the days of mindless munching. Fat. Sugar. Salt. A list of words that makes a generation of mindful eaters shudder.</span>
 
-<span style="color: #ffffff;">There is a new wave of snacks focusing on the good stuff - protein, fibre and nutrition. The definition of permissible snacking is changing. We call it Health 2.0.</span>[/vc_column_text][/vc_column][vc_column width="1/6"][/vc_column][/vc_row][vc_row el_class="overlayed-text" el_id="sensory"][vc_column][vc_single_image image="7522" img_size="full"][vc_column_text el_class="berthold"]
-<h2>Sensory Experience</h2>
-[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1568722833122{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #614b9d !important;}"][vc_column width="1/6"][/vc_column][vc_column width="2/3"][vc_column_text el_class="two-col"]<span style="color: #ffffff;">It’s all about experience.</span>
+<span style="color: #ffffff;">There is a new wave of snacks focusing on the good stuff - protein, fibre and nutrition. The definition of permissible snacking is changing. We call it Health 2.0.</span>[/vc_column_text][/vc_column][vc_column width="1/4"][/vc_column][/vc_row][vc_row el_class="overlayed-text" el_id="sensory"][vc_column][vc_single_image image="7599" img_size="full"][vc_column_text el_class="berthold"]
+<h2><span style="color: #ffffff;">Sensory Experience</span></h2>
+[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1569237502688{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #614b9d !important;}"][vc_column width="1/4"][/vc_column][vc_column width="1/2"][vc_column_text el_class="two-col dash-top white"]<span style="color: #ffffff;">It’s all about experience.</span>
 <span style="color: #ffffff;">Whether it’s a pop, a crunch, a spicy kick, consumers are looking for sensory experience.</span>
 
-<span style="color: #ffffff;">Something different to the norm. Technology developments will help brands deliver new formats to pique consumer interest.</span>[/vc_column_text][/vc_column][vc_column width="1/6"][/vc_column][/vc_row][vc_row el_class="overlayed-text" el_id="responsibility"][vc_column][vc_single_image image="7523" img_size="full"][vc_column_text el_class="berthold"]
-<h2>Responsibility</h2>
-[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1568722949730{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #2f7d81 !important;}"][vc_column width="1/6"][/vc_column][vc_column width="2/3"][vc_column_text el_class="two-col"]<span style="color: #ffffff;">Younger generations feel an acute sense of responsibility to tackling our environmental and social issues. They care about brands that truly do their bit to keep make the world</span>
+<span style="color: #ffffff;">Something different to the norm. Technology developments will help brands deliver new formats to pique consumer interest.</span>[/vc_column_text][/vc_column][vc_column width="1/4"][/vc_column][/vc_row][vc_row el_class="overlayed-text" el_id="responsibility"][vc_column][vc_single_image image="7598" img_size="full"][vc_column_text el_class="berthold"]
+<h2><span style="color: #ffffff;">Responsibility</span></h2>
+[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1569237595525{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #2f7d81 !important;}"][vc_column width="1/4"][/vc_column][vc_column width="1/2"][vc_column_text el_class="two-col dash-top white"]<span style="color: #ffffff;">Younger generations feel an acute sense of responsibility to tackling our environmental and social issues. They care about brands that truly do their bit to keep make the world</span>
 
-<span style="color: #ffffff;">a better place. So, whether it’s sustainable packaging or supporting good causes, snack brands will be connecting on new levels.</span>[/vc_column_text][/vc_column][vc_column width="1/6"][/vc_column][/vc_row][vc_row el_class="overlayed-text" el_id="adventure"][vc_column][vc_single_image image="7524" img_size="full"][vc_column_text el_class="berthold"]
-<h2>Spirit of Adventure</h2>
-[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1568723033552{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #bbc1cd !important;}"][vc_column width="1/6"][/vc_column][vc_column width="2/3"][vc_column_text el_class="two-col"]The world has become very small. The cultural context of snacking is changing.
-Consumers crave the taste of the unexpected. Who would
+<span style="color: #ffffff;">a better place. So, whether it’s sustainable packaging or supporting good causes, snack brands will be connecting on new levels.</span>[/vc_column_text][/vc_column][vc_column width="1/4"][/vc_column][/vc_row][vc_row el_class="overlayed-text" el_id="adventure"][vc_column][vc_single_image image="7601" img_size="full"][vc_column_text el_class="berthold"]
+<h2><span style="color: #ffffff;">Spirit of Adventure</span></h2>
+[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1569237651673{padding-top: 3rem !important;padding-bottom: 3rem !important;background-color: #bbc1cd !important;}"][vc_column width="1/4"][/vc_column][vc_column width="1/2"][vc_column_text el_class="two-col dash-top white"]<span style="color: #ffffff;">The world has become very small. The cultural context of snacking is changing.</span>
+<span style="color: #ffffff;">Consumers crave the taste of the unexpected. Who would</span>
 
-have thought we’d see insects sitting on UK supermarkets shelves but, with 2 billion people consuming them every day it was only a matter of time.[/vc_column_text][/vc_column][vc_column width="1/6"][/vc_column][/vc_row][vc_row el_id="hungry"][vc_column][vc_column_text]
-<h2>Hungry for more?</h2>
-We help brands innovate in the ideation or packaging development process to capitalise on shifts in consumer attitudes. We increase consumer relevance of your brand.
-We help your brand achieve competitive differentiation.
-We make more happen.
+<span style="color: #ffffff;">have thought we’d see insects sitting on UK supermarkets shelves but, with 2 billion people consuming them every day it was only a matter of time.</span>[/vc_column_text][/vc_column][vc_column width="1/4"][/vc_column][/vc_row][vc_row el_id="hungry" css=".vc_custom_1569242982611{background-color: #292929 !important;}" el_class="footer-panel"][vc_column][vc_column_text]
+<h3><span style="color: #e9c91e;">Hungry for more?</span></h3>
+<p class="dash-top white left"><span style="color: #ffffff;">We help brands innovate in the ideation or packaging development process to capitalise on shifts in consumer attitudes. We increase consumer relevance of your brand. We help your brand achieve competitive differentiation.</span>
+<span style="color: #e9c91e;">We make <strong>more</strong> happen.</span></p>
+&nbsp;
 
-To understand how we could help your brand or just to hear more about our learnings in the snack market please get in contact.
+&nbsp;
 
-www.honey.co.uk
-0207 354 4150 | xxxx@honey.co.uk[/vc_column_text][/vc_column][/vc_row]
+&nbsp;
+
+<span style="color: #ffffff;">To understand how we could help your brand or just to hear more about our learnings in the snack market please get in contact.</span>
+
+<a href="https://honey.co.uk"><span style="color: #ffffff;">www.honey.co.uk</span></a>
+<strong><span style="color: #e9c91e;">0207 354 4150 | xxxx@honey.co.uk</span></strong>[/vc_column_text][/vc_column][/vc_row]

@@ -403,8 +403,6 @@ jQuery(document).ready(function($) {
 		});
 
 		$(window).scroll(function(){
-			console.log( $window.scrollTop() + ' ' + panel_height + ' ' + panel_distance );
-
 			if( ($window.scrollTop() + menu_height ) >= panel_distance && $window.scrollTop() < ( panel_distance + panel_height ) ) {
 				$menu.addClass('black');
 			} else {

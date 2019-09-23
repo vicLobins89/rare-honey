@@ -227,7 +227,7 @@ html {
     }
 
     .footer-panel {
-        background-image: url(http://localhost/honey/wp-content/uploads/2019/09/honey-angle.png);
+        background-image: url(/wp-content/uploads/2019/09/honey-angle.png);
         background-size: 200px;
         background-position: right bottom !important;
         background-repeat: no-repeat;
@@ -241,6 +241,10 @@ html {
             font-size: 6rem;
             font-weight: bold;
             margin-bottom: 1rem;
+        }
+
+        a {
+            color: inherit;
         }
 
         @media only screen and (max-width: 767px) {
@@ -267,7 +271,7 @@ html {
             height: 100%;
             top: 0;
             left: 0;
-            background-image: url(https://honey.co.uk/wp-content/uploads/2017/02/yellow-angle.png);
+            background-image: url(/wp-content/uploads/2017/02/yellow-angle.png);
             background-size: 70px;
             background-position: right bottom;
             background-repeat: no-repeat;
