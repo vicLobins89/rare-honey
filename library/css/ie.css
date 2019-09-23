@@ -48,6 +48,7 @@ FONT FACE
   src: url("../fonts/berthold_walbaum_book_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/berthold_walbaum_book_regular-webfont.woff2") format("woff2"), url("../fonts/berthold_walbaum_book_regular-webfont.woff") format("woff"), url("../fonts/berthold_walbaum_book_regular-webfont.ttf") format("truetype"), url("../fonts/berthold_walbaum_book_regular-webfont.svg#berthold_walbaum_bookregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /*
 Typographical defaults: http://www.newnet-soft.com/blog/csstypography
 */
@@ -144,10 +145,12 @@ POSTS & CONTENT STYLES
   margin-right: 1.5em;
   display: inline;
   float: left; }
+
 .entry-content .alignright, .entry-content img.alignright {
   margin-left: 1.5em;
   display: inline;
   float: right; }
+
 .entry-content .aligncenter, .entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;
@@ -174,8 +177,10 @@ body {
 
 .bg-fixed.vc_custom_1500288003875 {
   background-position: center top 50px !important; }
+
 .bg-fixed.vc_custom_1500288033939 {
   background-position: center !important; }
+
 .bg-fixed.vc_custom_1500288074930 {
   background-position: center bottom !important; }
 
@@ -230,6 +235,7 @@ body {
 
 .landing-text h2 {
   font-size: 2.2em; }
+
 .landing-text h3 {
   font-size: 1.75em; }
 
@@ -239,6 +245,7 @@ body {
 .vc_row.testimonials {
   padding-left: 12%;
   padding-right: 12%; }
+
 .vc_row.hero_work .wpb_single_image:before {
   content: '';
   position: absolute;
@@ -246,6 +253,7 @@ body {
   height: 100%;
   background: url(../images/fade-bg.png) repeat-x center bottom;
   opacity: .4; }
+
 .vc_row.hero_work .wpb_text_column {
   position: absolute;
   width: 100%;
@@ -304,8 +312,10 @@ body {
 
 .body_copy h1, .body_copy .h1, .body_copy h2, .body_copy .h2, .body_copy h3, .body_copy .h3, .body_copy h4, .body_copy .h4, .body_copy h5, .body_copy .h5, .body_copy p, .body_copy .p, .body_copy li {
   font-size: 1.7em; }
+
 .home .body_copy {
   font-size: 130%; }
+
 .body_copy .vc_col-sm-8 {
   width: 100%; }
 
@@ -359,8 +369,8 @@ NAVIGATION STYLES
       .nav li ul.sub-menu li,
       .nav li ul.children li {
         /*
-        third level
-        */ }
+				third level
+				*/ }
         .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
         .nav li ul.children li a:hover,
         .nav li ul.children li a:focus {
