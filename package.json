@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/vicLobins89/rare-honey#readme",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^8.0.0"
   }
 }
